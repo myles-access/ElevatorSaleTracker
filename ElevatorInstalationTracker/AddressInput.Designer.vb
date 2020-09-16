@@ -22,16 +22,16 @@ Partial Class AddressInput
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.AddressInputText = New System.Windows.Forms.TextBox()
         Me.SubmitAddress = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'AddressInputText
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(509, 26)
-        Me.TextBox1.TabIndex = 0
+        Me.AddressInputText.Location = New System.Drawing.Point(12, 12)
+        Me.AddressInputText.Name = "AddressInputText"
+        Me.AddressInputText.Size = New System.Drawing.Size(509, 26)
+        Me.AddressInputText.TabIndex = 0
         '
         'SubmitAddress
         '
@@ -48,7 +48,7 @@ Partial Class AddressInput
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 97)
         Me.Controls.Add(Me.SubmitAddress)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.AddressInputText)
         Me.Name = "AddressInput"
         Me.Text = "AddressInput"
         Me.ResumeLayout(False)
@@ -56,6 +56,6 @@ Partial Class AddressInput
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents AddressInputText As TextBox
     Friend WithEvents SubmitAddress As Button
 End Class

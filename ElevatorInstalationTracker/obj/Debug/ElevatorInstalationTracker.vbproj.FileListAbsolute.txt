@@ -1,0 +1,14 @@
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.exe.config
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.exe
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.pdb
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.xml
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.vbprojAssemblyReference.cache
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.AddressInput.resources
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.MainMenu.resources
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.JobForm.resources
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.Resources.resources
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.vbproj.GenerateResource.cache
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.vbproj.CoreCompileInputs.cache
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.exe
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.xml
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.pdb
