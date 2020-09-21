@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="FolderLocation" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\myles\Desktop\Tracker Folder</Value>
+      <Value Profile="(Default)">C:\Users\myles\Desktop\TrackerFolder\</Value>
     </Setting>
   </Settings>
 </SettingsFile>
