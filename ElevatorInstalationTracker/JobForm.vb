@@ -13,23 +13,31 @@ Public Class JobForm
     End Sub
 
     Private Sub OpenFileButton_Click(sender As Object, e As EventArgs) Handles OpenFileButton1.Click
-        If OpenFileDialog1.ShowDialog <> Windows.Forms.DialogResult.Cancel Then
-            FileLocationText1.Text = OpenFileDialog1.FileName
-        End If
+        AddFile(FileLocationText1)
     End Sub
 
     Private Sub OpenFileButton2_Click(sender As Object, e As EventArgs) Handles OpenFileButton2.Click
-        If OpenFileDialog1.ShowDialog <> Windows.Forms.DialogResult.Cancel Then
-            FileLocationText2.Text = OpenFileDialog1.FileName
-        End If
+        AddFile(FileLocationText2)
     End Sub
     Private Sub OpenFileButton3_Click(sender As Object, e As EventArgs) Handles OpenFileButton3.Click
+        AddFile(FileLocationText3)
+    End Sub
+
+    Private Sub AddFile(cardStr As Label)
+        Dim path As String
+        Dim file As String
         If OpenFileDialog1.ShowDialog <> Windows.Forms.DialogResult.Cancel Then
-            FileLocationText3.Text = OpenFileDialog1.FileName
+            path = OpenFileDialog1.FileName
+            cardStr.Text = path
+            file = Dir(path)
+            My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
         End If
     End Sub
 
     Private Sub SaveForm()
+        FileWriter.Close()
+        FileWriter = New StreamWriter(My.Settings.FolderLocation & AddressText.Text & "\#tracker.txt", False)
+
         FileWriter.WriteLine(AddressText.Name & "|" & AddressText.Text)
 
         FileWriter.WriteLine(CheckBox1.Name & "|" & CheckBox1.Checked.ToString())
@@ -42,5 +50,6 @@ Public Class JobForm
         FileWriter.WriteLine(FileLocationText3.Name & "|" & FileLocationText3.Text)
 
         FileWriter.Flush()
+        FileWriter.Close()
     End Sub
 End Class
