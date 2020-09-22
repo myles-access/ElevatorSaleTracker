@@ -35,17 +35,37 @@ Public Class MainMenu
                     'FILE LOCATION TEXTS
                 ElseIf String.Equals(prop(0), JobForm.FileLocationText1.Name) Then
                     JobForm.FileLocationText1.Text = prop(1)
-                ElseIf String.Equals(prop(0), JobForm.FileLocationText2.Name) Then
-                    JobForm.FileLocationText2.Text = prop(1)
+                ElseIf String.Equals(prop(0), JobForm.card2.Name) Then
+                    JobForm.card2.Text = prop(1)
                 ElseIf String.Equals(prop(0), JobForm.FileLocationText3.Name) Then
                     JobForm.FileLocationText3.Text = prop(1)
+                ElseIf String.Equals(prop(0), JobForm.FileLocationText4.Name) Then
+                    JobForm.FileLocationText4.Text = prop(1)
+                ElseIf String.Equals(prop(0), JobForm.FileLocationText5.Name) Then
+                    JobForm.FileLocationText5.Text = prop(1)
+                ElseIf String.Equals(prop(0), JobForm.FileLocationText6.Name) Then
+                    JobForm.FileLocationText6.Text = prop(1)
+                ElseIf String.Equals(prop(0), JobForm.FileLocationText7.Name) Then
+                    JobForm.FileLocationText7.Text = prop(1)
+                ElseIf String.Equals(prop(0), JobForm.FileLocationText8.Name) Then
+                    JobForm.FileLocationText8.Text = prop(1)
                     'CHECK BOXES
                 ElseIf String.Equals(prop(0), JobForm.CheckBox1.Name) Then
                     JobForm.CheckBox1.Checked = Boolean.Parse(prop(1))
+                ElseIf String.Equals(prop(0), JobForm.CheckBox5.Name) Then
+                    JobForm.CheckBox5.Checked = Boolean.Parse(prop(1))
                 ElseIf String.Equals(prop(0), JobForm.CheckBox2.Name) Then
                     JobForm.CheckBox2.Checked = Boolean.Parse(prop(1))
                 ElseIf String.Equals(prop(0), JobForm.CheckBox3.Name) Then
                     JobForm.CheckBox3.Checked = Boolean.Parse(prop(1))
+                ElseIf String.Equals(prop(0), JobForm.CheckBox4.Name) Then
+                    JobForm.CheckBox4.Checked = Boolean.Parse(prop(1))
+                ElseIf String.Equals(prop(0), JobForm.CheckBox6.Name) Then
+                    JobForm.CheckBox6.Checked = Boolean.Parse(prop(1))
+                ElseIf String.Equals(prop(0), JobForm.CheckBox7.Name) Then
+                    JobForm.CheckBox7.Checked = Boolean.Parse(prop(1))
+                ElseIf String.Equals(prop(0), JobForm.CheckBox8.Name) Then
+                    JobForm.CheckBox8.Checked = Boolean.Parse(prop(1))
                 End If
             Loop
 
