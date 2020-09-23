@@ -5,5 +5,8 @@
     <Setting Name="FolderLocation" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Users\myles\Desktop\TrackerFolder\</Value>
     </Setting>
+    <Setting Name="JobLoadArray" Type="system.collections.arraylist" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

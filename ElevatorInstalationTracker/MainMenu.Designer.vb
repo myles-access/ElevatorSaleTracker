@@ -22,22 +22,22 @@ Partial Class MainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LoadFileButton = New System.Windows.Forms.PictureBox()
         Me.NewJobButton = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LoadFileButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NewJobButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'LoadFileButton
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.ElevatorInstalationTracker.My.Resources.Resources.folder
-        Me.PictureBox1.Location = New System.Drawing.Point(509, 293)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(200, 200)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.LoadFileButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LoadFileButton.Image = Global.ElevatorInstalationTracker.My.Resources.Resources.folder
+        Me.LoadFileButton.Location = New System.Drawing.Point(509, 293)
+        Me.LoadFileButton.Name = "LoadFileButton"
+        Me.LoadFileButton.Size = New System.Drawing.Size(200, 200)
+        Me.LoadFileButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.LoadFileButton.TabIndex = 1
+        Me.LoadFileButton.TabStop = False
         '
         'NewJobButton
         '
@@ -55,16 +55,16 @@ Partial Class MainMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(892, 596)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.LoadFileButton)
         Me.Controls.Add(Me.NewJobButton)
         Me.Name = "MainMenu"
         Me.Text = "Main Menu"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LoadFileButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NewJobButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents NewJobButton As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LoadFileButton As PictureBox
 End Class

@@ -12,3 +12,4 @@ C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\
 C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.exe
 C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.xml
 C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.pdb
+C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.LoadAddress.resources

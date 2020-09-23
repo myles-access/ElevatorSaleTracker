@@ -79,6 +79,12 @@
     <Compile Include="AddressInput.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Load Address.Designer.vb">
+      <DependentUpon>Load Address.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Load Address.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddressInput.resx">
       <DependentUpon>AddressInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load Address.resx">
+      <DependentUpon>Load Address.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
