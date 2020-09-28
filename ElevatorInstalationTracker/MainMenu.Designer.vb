@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MainMenu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LoadFileButton = New System.Windows.Forms.PictureBox()
         Me.NewJobButton = New System.Windows.Forms.PictureBox()
@@ -57,6 +57,7 @@ Partial Class MainMenu
         Me.ClientSize = New System.Drawing.Size(892, 596)
         Me.Controls.Add(Me.LoadFileButton)
         Me.Controls.Add(Me.NewJobButton)
+        Me.IsMdiContainer = True
         Me.Name = "MainMenu"
         Me.Text = "Main Menu"
         CType(Me.LoadFileButton, System.ComponentModel.ISupportInitialize).EndInit()

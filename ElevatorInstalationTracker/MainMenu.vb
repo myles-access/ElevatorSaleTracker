@@ -23,7 +23,7 @@ Public Class MainMenu
             FileWriter.WriteLine(address)
             FileWriter.Flush()
             FileWriter.Close()
-            SortAddressList()
+            ' SortAddressList()
 
             System.IO.Directory.CreateDirectory(My.Settings.FolderLocation & "\" & address)
             JobForm.AddressFolderLocation = My.Settings.FolderLocation & "\" & address
@@ -99,21 +99,21 @@ Public Class MainMenu
         Me.Hide()
     End Sub
 
-    Public Sub SortAddressList()
-        Dim addlines() As String
-        Dim i As Integer
-        FileReader = New StreamReader(My.Settings.FolderLocation & "#JobAddressTracker.txt", False)
-        Do Until FileReader.EndOfStream
-            i += 1
-            addlines(i) = FileReader.ReadLine
-        Loop
-        FileReader.Close()
-        Array.Sort(addlines)
-        FileWriter = New StreamWriter(My.Settings.FolderLocation & "#JobAddressTracker.txt", True)
-        For j = 0 To i
-            FileWriter.WriteLine(addlines(j))
-        Next
-        FileWriter.Flush()
-        FileWriter.Close()
-    End Sub
+    'Public Sub SortAddressList()
+    '    Dim addlines() As String
+    '    Dim i As Integer
+    '    FileReader = New StreamReader(My.Settings.FolderLocation & "#JobAddressTracker.txt", False)
+    '    Do Until FileReader.EndOfStream
+    '        i += 1
+    '        addlines(i) = FileReader.ReadLine
+    '    Loop
+    '    FileReader.Close()
+    '    Array.Sort(addlines)
+    '    FileWriter = New StreamWriter(My.Settings.FolderLocation & "#JobAddressTracker.txt", True)
+    '    For j = 0 To i
+    '        FileWriter.WriteLine(addlines(j))
+    '    Next
+    '    FileWriter.Flush()
+    '    FileWriter.Close()
+    'End Sub
 End Class

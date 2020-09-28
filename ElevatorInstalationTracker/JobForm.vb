@@ -22,6 +22,7 @@ Public Class JobForm
             file = Dir(path)
             My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
         End If
+        RefreshForm()
     End Sub
 
     Private Sub SaveForm()
@@ -118,5 +119,54 @@ Public Class JobForm
 
     Private Sub open8_Click(sender As Object, e As EventArgs) Handles open8.Click
         Process.Start(FileLocationText8.Text)
+    End Sub
+
+    Private Sub JobForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RefreshForm()
+    End Sub
+
+    Public Sub RefreshForm()
+        SaveForm()
+
+        If FileLocationText1.Text = "No File Selected" Then
+            open1.Enabled = False
+        Else
+            open1.Enabled = True
+        End If
+        If FileLocationText2.Text = "No File Selected" Then
+            open2.Enabled = False
+        Else
+            open2.Enabled = True
+        End If
+        If FileLocationText3.Text = "No File Selected" Then
+            open3.Enabled = False
+        Else
+            open3.Enabled = True
+        End If
+        If FileLocationText4.Text = "No File Selected" Then
+            open4.Enabled = False
+        Else
+            open4.Enabled = True
+        End If
+        If FileLocationText5.Text = "No File Selected" Then
+            open5.Enabled = False
+        Else
+            open5.Enabled = True
+        End If
+        If FileLocationText6.Text = "No File Selected" Then
+            open6.Enabled = False
+        Else
+            open6.Enabled = True
+        End If
+        If FileLocationText7.Text = "No File Selected" Then
+            open7.Enabled = False
+        Else
+            open7.Enabled = True
+        End If
+        If FileLocationText8.Text = "No File Selected" Then
+            open8.Enabled = False
+        Else
+            open8.Enabled = True
+        End If
     End Sub
 End Class
