@@ -10,6 +10,8 @@ Public Class JobForm
         SaveForm()
         FileWriter.Close()
         MainMenu.ShutdownProgram()
+        MainMenu.NewJobButton.Visible = True
+        MainMenu.LoadFileButton.Visible = True
     End Sub
 
 
@@ -57,6 +59,7 @@ Public Class JobForm
 
         FileWriter.Flush()
         FileWriter.Close()
+        RefreshForm()
     End Sub
 
     Private Sub OpenFileButton_Click(sender As Object, e As EventArgs) Handles OpenFileButton1.Click
@@ -126,7 +129,7 @@ Public Class JobForm
     End Sub
 
     Public Sub RefreshForm()
-        SaveForm()
+        'SaveForm()
 
         If FileLocationText1.Text = "No File Selected" Then
             open1.Enabled = False

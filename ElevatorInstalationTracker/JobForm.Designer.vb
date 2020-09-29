@@ -134,6 +134,7 @@ Partial Class JobForm
         '
         Me.AddressText.AutoSize = True
         Me.AddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddressText.ForeColor = System.Drawing.Color.White
         Me.AddressText.Location = New System.Drawing.Point(386, 9)
         Me.AddressText.Name = "AddressText"
         Me.AddressText.Size = New System.Drawing.Size(86, 29)
@@ -510,8 +511,8 @@ Partial Class JobForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Gainsboro
-        Me.ClientSize = New System.Drawing.Size(860, 844)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(876, 844)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
@@ -522,6 +523,7 @@ Partial Class JobForm
         Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.AddressText)
         Me.Controls.Add(Me.Card1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "JobForm"
         Me.Text = "Job Entry"
         Me.Card1.ResumeLayout(False)

@@ -33,12 +33,12 @@ Partial Class LoadAddress
         Me.LoadCombo.FormattingEnabled = True
         Me.LoadCombo.Location = New System.Drawing.Point(10, 26)
         Me.LoadCombo.Name = "LoadCombo"
-        Me.LoadCombo.Size = New System.Drawing.Size(415, 28)
+        Me.LoadCombo.Size = New System.Drawing.Size(648, 28)
         Me.LoadCombo.TabIndex = 0
         '
         'ComboLoadButton
         '
-        Me.ComboLoadButton.Location = New System.Drawing.Point(431, 21)
+        Me.ComboLoadButton.Location = New System.Drawing.Point(664, 21)
         Me.ComboLoadButton.Name = "ComboLoadButton"
         Me.ComboLoadButton.Size = New System.Drawing.Size(211, 37)
         Me.ComboLoadButton.TabIndex = 1
@@ -47,9 +47,9 @@ Partial Class LoadAddress
         '
         'FIleLoadButton
         '
-        Me.FIleLoadButton.Location = New System.Drawing.Point(217, 60)
+        Me.FIleLoadButton.Location = New System.Drawing.Point(343, 60)
         Me.FIleLoadButton.Name = "FIleLoadButton"
-        Me.FIleLoadButton.Size = New System.Drawing.Size(171, 74)
+        Me.FIleLoadButton.Size = New System.Drawing.Size(211, 74)
         Me.FIleLoadButton.TabIndex = 2
         Me.FIleLoadButton.Text = "Load Job From File"
         Me.FIleLoadButton.UseVisualStyleBackColor = True
@@ -62,11 +62,12 @@ Partial Class LoadAddress
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(654, 151)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(887, 200)
         Me.Controls.Add(Me.FIleLoadButton)
         Me.Controls.Add(Me.ComboLoadButton)
         Me.Controls.Add(Me.LoadCombo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LoadAddress"
         Me.Text = "Load Address"
         Me.ResumeLayout(False)

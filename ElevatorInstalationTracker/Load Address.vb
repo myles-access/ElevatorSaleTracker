@@ -8,6 +8,7 @@ Public Class LoadAddress
 
     Private Sub ComboLoadButton_Click(sender As Object, e As EventArgs) Handles ComboLoadButton.Click
         JobForm.Show()
+        JobForm.MdiParent = MainMenu
         MainMenu.LoadJob(LoadCombo.Text)
         Me.Close()
     End Sub
@@ -24,6 +25,7 @@ Public Class LoadAddress
             End If
 
             JobForm.Show()
+            JobForm.MdiParent = MainMenu
             Me.Close()
         End If
     End Sub
