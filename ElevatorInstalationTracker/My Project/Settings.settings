@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="FolderLocation" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\myles\Desktop\TrackerFolder\</Value>
+      <Value Profile="(Default)">X:\Tracker Program\</Value>
     </Setting>
     <Setting Name="JobLoadArray" Type="system.collections.arraylist" Scope="User">
       <Value Profile="(Default)" />

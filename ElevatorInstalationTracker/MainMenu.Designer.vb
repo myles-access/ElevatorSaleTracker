@@ -54,7 +54,7 @@ Partial Class MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(878, 1081)
+        Me.ClientSize = New System.Drawing.Size(891, 1081)
         Me.Controls.Add(Me.LoadFileButton)
         Me.Controls.Add(Me.NewJobButton)
         Me.IsMdiContainer = True

@@ -3,24 +3,32 @@
 Public Class MainMenu
     Dim FileWriter As StreamWriter
     Dim FileReader As StreamReader
+
+    'Public Sub ShutdownProgram()
+
+    '    Me.Close()
+    'End Sub
+
     Private Sub NewJobButton_Click(sender As Object, e As EventArgs) Handles NewJobButton.Click
         LoadAddress.Close()
         AddressInput.Show()
         AddressInput.MdiParent = Me
         AddressInput.Left = 0
         AddressInput.Top = 0
-    End Sub
-    Public Sub ShutdownProgram()
 
-        Me.Close()
+        AddressInput.WindowState = FormWindowState.Maximized
     End Sub
+
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles LoadFileButton.Click
         AddressInput.Close()
         LoadAddress.Show()
         LoadAddress.MdiParent = Me
         LoadAddress.Left = 0
         LoadAddress.Top = 0
+
+        LoadAddress.WindowState = FormWindowState.Maximized
     End Sub
+
     Public Sub SetupJobForm()
         JobForm.MdiParent = Me
         'Me.Size = JobForm.Size
@@ -30,11 +38,11 @@ Public Class MainMenu
 
         JobForm.Top = 0
         JobForm.Left = 0
+        JobForm.RefreshForm()
     End Sub
 
     Public Sub CreateNewJob(address As String)
         Dim prop(2) As String
-        SetupJobForm()
         JobForm.Show()
 
         JobForm.AddressText.Text = address
@@ -59,8 +67,10 @@ Public Class MainMenu
         ElseIf System.IO.Directory.Exists(My.Settings.FolderLocation & "\" & address) = True Then
             LoadJob(address)
         End If
+
         FileWriter.Flush()
         FileWriter.Close()
+        SetupJobForm()
     End Sub
 
     Public Sub LoadJob(address As String)
@@ -115,8 +125,8 @@ Public Class MainMenu
         FileReader.Close()
         SetupJobForm()
 
-        FileWriter = New StreamWriter(My.Settings.FolderLocation & address & "\#tracker.txt", False)
-        JobForm.FileWriter = FileWriter
+        'FileWriter = New StreamWriter(My.Settings.FolderLocation & address & "\#tracker.txt", False)
+        'JobForm.FileWriter = FileWriter
         'Me.Hide()
     End Sub
 
@@ -137,4 +147,5 @@ Public Class MainMenu
     '    FileWriter.Flush()
     '    FileWriter.Close()
     'End Sub
+
 End Class

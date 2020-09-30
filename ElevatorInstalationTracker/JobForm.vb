@@ -7,13 +7,12 @@ Public Class JobForm
         SaveForm()
     End Sub
     Public Sub JobForm_FormClosing(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.FormClosing
+        '    FileWriter.Close()
         SaveForm()
-        FileWriter.Close()
-        MainMenu.ShutdownProgram()
+        'MainMenu.ShutdownProgram()
         MainMenu.NewJobButton.Visible = True
         MainMenu.LoadFileButton.Visible = True
     End Sub
-
 
     Private Sub AddFile(cardStr As Label)
         Dim path As String
@@ -28,7 +27,9 @@ Public Class JobForm
     End Sub
 
     Private Sub SaveForm()
-        FileWriter.Close()
+
+        'FileWriter.Close()
+
         FileWriter = New StreamWriter(My.Settings.FolderLocation & AddressText.Text & "\#tracker.txt", False)
 
         FileWriter.WriteLine(AddressText.Name & "|" & AddressText.Text)
@@ -59,7 +60,51 @@ Public Class JobForm
 
         FileWriter.Flush()
         FileWriter.Close()
-        RefreshForm()
+        'RefreshForm()
+    End Sub
+    Public Sub RefreshForm()
+
+        If FileLocationText1.Text = "No File Selected" Then
+            open1.Enabled = False
+        Else
+            open1.Enabled = True
+        End If
+        If FileLocationText2.Text = "No File Selected" Then
+            open2.Enabled = False
+        Else
+            open2.Enabled = True
+        End If
+        If FileLocationText3.Text = "No File Selected" Then
+            open3.Enabled = False
+        Else
+            open3.Enabled = True
+        End If
+        If FileLocationText4.Text = "No File Selected" Then
+            open4.Enabled = False
+        Else
+            open4.Enabled = True
+        End If
+        If FileLocationText5.Text = "No File Selected" Then
+            open5.Enabled = False
+        Else
+            open5.Enabled = True
+        End If
+        If FileLocationText6.Text = "No File Selected" Then
+            open6.Enabled = False
+        Else
+            open6.Enabled = True
+        End If
+        If FileLocationText7.Text = "No File Selected" Then
+            open7.Enabled = False
+        Else
+            open7.Enabled = True
+        End If
+        If FileLocationText8.Text = "No File Selected" Then
+            open8.Enabled = False
+        Else
+            open8.Enabled = True
+        End If
+        SaveForm()
     End Sub
 
     Private Sub OpenFileButton_Click(sender As Object, e As EventArgs) Handles OpenFileButton1.Click
@@ -125,51 +170,6 @@ Public Class JobForm
     End Sub
 
     Private Sub JobForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RefreshForm()
-    End Sub
-
-    Public Sub RefreshForm()
-        'SaveForm()
-
-        If FileLocationText1.Text = "No File Selected" Then
-            open1.Enabled = False
-        Else
-            open1.Enabled = True
-        End If
-        If FileLocationText2.Text = "No File Selected" Then
-            open2.Enabled = False
-        Else
-            open2.Enabled = True
-        End If
-        If FileLocationText3.Text = "No File Selected" Then
-            open3.Enabled = False
-        Else
-            open3.Enabled = True
-        End If
-        If FileLocationText4.Text = "No File Selected" Then
-            open4.Enabled = False
-        Else
-            open4.Enabled = True
-        End If
-        If FileLocationText5.Text = "No File Selected" Then
-            open5.Enabled = False
-        Else
-            open5.Enabled = True
-        End If
-        If FileLocationText6.Text = "No File Selected" Then
-            open6.Enabled = False
-        Else
-            open6.Enabled = True
-        End If
-        If FileLocationText7.Text = "No File Selected" Then
-            open7.Enabled = False
-        Else
-            open7.Enabled = True
-        End If
-        If FileLocationText8.Text = "No File Selected" Then
-            open8.Enabled = False
-        Else
-            open8.Enabled = True
-        End If
+        'RefreshForm()
     End Sub
 End Class

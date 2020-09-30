@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\myles\Desktop\TrackerFolder\")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("X:\Tracker Program\")>  _
         Public Property FolderLocation() As String
             Get
                 Return CType(Me("FolderLocation"),String)
