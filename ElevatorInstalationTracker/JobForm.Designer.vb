@@ -82,7 +82,7 @@ Partial Class JobForm
         Me.Card1.Controls.Add(Me.FileLocationText1)
         Me.Card1.Controls.Add(Me.OpenFileButton1)
         Me.Card1.Controls.Add(Me.CheckBox1)
-        Me.Card1.Location = New System.Drawing.Point(13, 58)
+        Me.Card1.Location = New System.Drawing.Point(22, 107)
         Me.Card1.Name = "Card1"
         Me.Card1.Size = New System.Drawing.Size(415, 111)
         Me.Card1.TabIndex = 0
@@ -133,17 +133,18 @@ Partial Class JobForm
         'AddressText
         '
         Me.AddressText.AutoSize = True
-        Me.AddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddressText.ForeColor = System.Drawing.Color.White
-        Me.AddressText.Location = New System.Drawing.Point(386, 9)
+        Me.AddressText.Location = New System.Drawing.Point(14, 46)
         Me.AddressText.Name = "AddressText"
-        Me.AddressText.Size = New System.Drawing.Size(86, 29)
+        Me.AddressText.Size = New System.Drawing.Size(139, 46)
         Me.AddressText.TabIndex = 1
         Me.AddressText.Text = "Label1"
+        Me.AddressText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'SaveButton
         '
-        Me.SaveButton.Location = New System.Drawing.Point(383, 798)
+        Me.SaveButton.Location = New System.Drawing.Point(379, 609)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Size = New System.Drawing.Size(89, 34)
         Me.SaveButton.TabIndex = 2
@@ -157,7 +158,7 @@ Partial Class JobForm
         Me.GroupBox1.Controls.Add(Me.FileLocationText5)
         Me.GroupBox1.Controls.Add(Me.OpenFileButton5)
         Me.GroupBox1.Controls.Add(Me.CheckBox5)
-        Me.GroupBox1.Location = New System.Drawing.Point(434, 58)
+        Me.GroupBox1.Location = New System.Drawing.Point(443, 107)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox1.TabIndex = 4
@@ -208,7 +209,7 @@ Partial Class JobForm
         Me.card2.Controls.Add(Me.FileLocationText2)
         Me.card2.Controls.Add(Me.OpenFileButton2)
         Me.card2.Controls.Add(Me.CheckBox2)
-        Me.card2.Location = New System.Drawing.Point(13, 175)
+        Me.card2.Location = New System.Drawing.Point(22, 224)
         Me.card2.Name = "card2"
         Me.card2.Size = New System.Drawing.Size(415, 111)
         Me.card2.TabIndex = 4
@@ -259,7 +260,7 @@ Partial Class JobForm
         Me.GroupBox3.Controls.Add(Me.FileLocationText3)
         Me.GroupBox3.Controls.Add(Me.OpenFileButton3)
         Me.GroupBox3.Controls.Add(Me.CheckBox3)
-        Me.GroupBox3.Location = New System.Drawing.Point(13, 292)
+        Me.GroupBox3.Location = New System.Drawing.Point(22, 341)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox3.TabIndex = 4
@@ -310,7 +311,7 @@ Partial Class JobForm
         Me.GroupBox4.Controls.Add(Me.FileLocationText4)
         Me.GroupBox4.Controls.Add(Me.OpenFileButton4)
         Me.GroupBox4.Controls.Add(Me.CheckBox4)
-        Me.GroupBox4.Location = New System.Drawing.Point(13, 409)
+        Me.GroupBox4.Location = New System.Drawing.Point(22, 458)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox4.TabIndex = 4
@@ -361,7 +362,7 @@ Partial Class JobForm
         Me.GroupBox5.Controls.Add(Me.FileLocationText6)
         Me.GroupBox5.Controls.Add(Me.OpenFileButton6)
         Me.GroupBox5.Controls.Add(Me.CheckBox6)
-        Me.GroupBox5.Location = New System.Drawing.Point(434, 175)
+        Me.GroupBox5.Location = New System.Drawing.Point(443, 224)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox5.TabIndex = 5
@@ -412,7 +413,7 @@ Partial Class JobForm
         Me.GroupBox6.Controls.Add(Me.FileLocationText7)
         Me.GroupBox6.Controls.Add(Me.OpenFileButton7)
         Me.GroupBox6.Controls.Add(Me.CheckBox7)
-        Me.GroupBox6.Location = New System.Drawing.Point(434, 292)
+        Me.GroupBox6.Location = New System.Drawing.Point(443, 341)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox6.TabIndex = 5
@@ -463,7 +464,7 @@ Partial Class JobForm
         Me.GroupBox7.Controls.Add(Me.FileLocationText8)
         Me.GroupBox7.Controls.Add(Me.OpenFileButton8)
         Me.GroupBox7.Controls.Add(Me.CheckBox8)
-        Me.GroupBox7.Location = New System.Drawing.Point(434, 409)
+        Me.GroupBox7.Location = New System.Drawing.Point(443, 458)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox7.TabIndex = 5
@@ -512,7 +513,7 @@ Partial Class JobForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(876, 844)
+        Me.ClientSize = New System.Drawing.Size(876, 1406)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)

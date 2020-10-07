@@ -57,6 +57,7 @@ Partial Class MainMenu
         Me.ClientSize = New System.Drawing.Size(891, 1081)
         Me.Controls.Add(Me.LoadFileButton)
         Me.Controls.Add(Me.NewJobButton)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.IsMdiContainer = True
         Me.Name = "MainMenu"
         Me.Text = "Main Menu"

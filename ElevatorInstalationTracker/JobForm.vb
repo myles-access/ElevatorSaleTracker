@@ -6,6 +6,10 @@ Public Class JobForm
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
         SaveForm()
     End Sub
+    Private Sub JobForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'RefreshForm()
+    End Sub
+
     Public Sub JobForm_FormClosing(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.FormClosing
         '    FileWriter.Close()
         SaveForm()
@@ -17,12 +21,22 @@ Public Class JobForm
     Private Sub AddFile(cardStr As Label)
         Dim path As String
         Dim file As String
+
         If OpenFileDialog1.ShowDialog <> Windows.Forms.DialogResult.Cancel Then
-            path = OpenFileDialog1.FileName
-            cardStr.Text = path
-            file = Dir(path)
-            My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
+            If cardStr.Text <> "No File Selected" Then
+                My.Computer.FileSystem.DeleteFile(cardStr.Text)
+                path = OpenFileDialog1.FileName
+                file = Dir(path)
+                My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
+                cardStr.Text = (My.Settings.FolderLocation & AddressText.Text & "\" & file)
+            Else
+                path = OpenFileDialog1.FileName
+                file = Dir(path)
+                My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
+                cardStr.Text = (My.Settings.FolderLocation & AddressText.Text & "\" & file)
+            End If
         End If
+
         RefreshForm()
     End Sub
 
@@ -62,6 +76,7 @@ Public Class JobForm
         FileWriter.Close()
         'RefreshForm()
     End Sub
+
     Public Sub RefreshForm()
 
         If FileLocationText1.Text = "No File Selected" Then
@@ -69,41 +84,49 @@ Public Class JobForm
         Else
             open1.Enabled = True
         End If
+
         If FileLocationText2.Text = "No File Selected" Then
             open2.Enabled = False
         Else
             open2.Enabled = True
         End If
+
         If FileLocationText3.Text = "No File Selected" Then
             open3.Enabled = False
         Else
             open3.Enabled = True
         End If
+
         If FileLocationText4.Text = "No File Selected" Then
             open4.Enabled = False
         Else
             open4.Enabled = True
         End If
+
         If FileLocationText5.Text = "No File Selected" Then
             open5.Enabled = False
         Else
             open5.Enabled = True
         End If
+
         If FileLocationText6.Text = "No File Selected" Then
             open6.Enabled = False
         Else
             open6.Enabled = True
         End If
+
         If FileLocationText7.Text = "No File Selected" Then
             open7.Enabled = False
         Else
             open7.Enabled = True
         End If
+
         If FileLocationText8.Text = "No File Selected" Then
             open8.Enabled = False
         Else
             open8.Enabled = True
         End If
+
         SaveForm()
     End Sub
 
@@ -169,7 +192,67 @@ Public Class JobForm
         Process.Start(FileLocationText8.Text)
     End Sub
 
-    Private Sub JobForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'RefreshForm()
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            Card1.BackColor = Color.Green
+        ElseIf Not CheckBox1.Checked Then
+            Card1.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox5_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox5.CheckedChanged
+        If CheckBox5.Checked Then
+            GroupBox1.BackColor = Color.Green
+        ElseIf Not CheckBox5.Checked Then
+            GroupBox1.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked Then
+            card2.BackColor = Color.Green
+        ElseIf Not CheckBox2.Checked Then
+            card2.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
+        If CheckBox6.Checked Then
+            GroupBox5.BackColor = Color.Green
+        ElseIf Not CheckBox6.Checked Then
+            GroupBox5.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
+        If CheckBox3.Checked Then
+            GroupBox3.BackColor = Color.Green
+        ElseIf Not CheckBox3.Checked Then
+            GroupBox3.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
+        If CheckBox7.Checked Then
+            GroupBox6.BackColor = Color.Green
+        ElseIf Not CheckBox7.Checked Then
+            GroupBox6.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
+        If CheckBox4.Checked Then
+            GroupBox4.BackColor = Color.Green
+        ElseIf Not CheckBox4.Checked Then
+            GroupBox4.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox8_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox8.CheckedChanged
+        If CheckBox8.Checked Then
+            GroupBox7.BackColor = Color.Green
+        ElseIf Not CheckBox8.Checked Then
+            GroupBox7.BackColor = Color.White
+        End If
     End Sub
 End Class

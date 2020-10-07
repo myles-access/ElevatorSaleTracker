@@ -26,44 +26,58 @@ Partial Class LoadAddress
         Me.ComboLoadButton = New System.Windows.Forms.Button()
         Me.FIleLoadButton = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LoadCombo
         '
+        Me.LoadCombo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoadCombo.FormattingEnabled = True
-        Me.LoadCombo.Location = New System.Drawing.Point(10, 26)
+        Me.LoadCombo.Location = New System.Drawing.Point(12, 73)
         Me.LoadCombo.Name = "LoadCombo"
-        Me.LoadCombo.Size = New System.Drawing.Size(648, 28)
+        Me.LoadCombo.Size = New System.Drawing.Size(648, 45)
         Me.LoadCombo.TabIndex = 0
         '
         'ComboLoadButton
         '
-        Me.ComboLoadButton.Location = New System.Drawing.Point(664, 21)
+        Me.ComboLoadButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboLoadButton.Location = New System.Drawing.Point(664, 64)
         Me.ComboLoadButton.Name = "ComboLoadButton"
-        Me.ComboLoadButton.Size = New System.Drawing.Size(211, 37)
+        Me.ComboLoadButton.Size = New System.Drawing.Size(211, 70)
         Me.ComboLoadButton.TabIndex = 1
         Me.ComboLoadButton.Text = "Load Job"
         Me.ComboLoadButton.UseVisualStyleBackColor = True
         '
         'FIleLoadButton
         '
-        Me.FIleLoadButton.Location = New System.Drawing.Point(343, 60)
+        Me.FIleLoadButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FIleLoadButton.Location = New System.Drawing.Point(12, 133)
         Me.FIleLoadButton.Name = "FIleLoadButton"
         Me.FIleLoadButton.Size = New System.Drawing.Size(211, 74)
         Me.FIleLoadButton.TabIndex = 2
-        Me.FIleLoadButton.Text = "Load Job From File"
+        Me.FIleLoadButton.Text = "Pick Job From File"
         Me.FIleLoadButton.UseVisualStyleBackColor = True
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(664, 140)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(211, 31)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Sort Jobs"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'LoadAddress
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(887, 200)
+        Me.ClientSize = New System.Drawing.Size(887, 378)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.FIleLoadButton)
         Me.Controls.Add(Me.ComboLoadButton)
         Me.Controls.Add(Me.LoadCombo)
@@ -78,4 +92,5 @@ Partial Class LoadAddress
     Friend WithEvents ComboLoadButton As Button
     Friend WithEvents FIleLoadButton As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Button1 As Button
 End Class
