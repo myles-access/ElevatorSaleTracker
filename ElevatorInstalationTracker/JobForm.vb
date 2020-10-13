@@ -137,9 +137,11 @@ Public Class JobForm
     Private Sub OpenFileButton2_Click(sender As Object, e As EventArgs) Handles OpenFileButton2.Click
         AddFile(FileLocationText2)
     End Sub
+
     Private Sub OpenFileButton3_Click(sender As Object, e As EventArgs) Handles OpenFileButton3.Click
         AddFile(FileLocationText3)
     End Sub
+
     Private Sub OpenFileButton4_Click(sender As Object, e As EventArgs) Handles OpenFileButton4.Click
         AddFile(FileLocationText4)
     End Sub
@@ -254,5 +256,9 @@ Public Class JobForm
         ElseIf Not CheckBox8.Checked Then
             GroupBox7.BackColor = Color.White
         End If
+    End Sub
+
+    Private Sub GroupBox7_Enter(sender As Object, e As EventArgs) Handles GroupBox7.Enter
+
     End Sub
 End Class

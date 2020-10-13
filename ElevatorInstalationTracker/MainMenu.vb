@@ -7,19 +7,11 @@ Public Class MainMenu
     Private Sub NewJobButton_Click(sender As Object, e As EventArgs) Handles NewJobButton.Click
         LoadAddress.Close()
         AddressInput.Show()
-        AddressInput.MdiParent = Me
-        AddressInput.Left = 0
-        AddressInput.Top = 0
-        AddressInput.WindowState = FormWindowState.Maximized
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles LoadFileButton.Click
         AddressInput.Close()
         LoadAddress.Show()
-        LoadAddress.MdiParent = Me
-        LoadAddress.Left = 0
-        LoadAddress.Top = 0
-        LoadAddress.WindowState = FormWindowState.Maximized
     End Sub
 
     Public Sub SetupJobForm()
@@ -132,5 +124,9 @@ Public Class MainMenu
 
         FileReader.Close()
         SetupJobForm()
+    End Sub
+
+    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

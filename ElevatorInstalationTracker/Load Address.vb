@@ -8,6 +8,10 @@ Public Class LoadAddress
     Private Sub LoadAddress_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SortAddress()
         LoadCombo.Items.AddRange(File.ReadAllLines(My.Settings.FolderLocation & "#JobAddressTracker.txt"))
+        Me.MdiParent = MainMenu
+        Me.Left = 0
+        Me.Top = 0
+        Me.WindowState = FormWindowState.Maximized
     End Sub
 
     'Load the address selected in the combo box

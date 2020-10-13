@@ -22,6 +22,8 @@ Partial Class JobForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(JobForm))
         Me.Card1 = New System.Windows.Forms.GroupBox()
         Me.open1 = New System.Windows.Forms.Button()
         Me.FileLocationText1 = New System.Windows.Forms.Label()
@@ -65,6 +67,7 @@ Partial Class JobForm
         Me.FileLocationText8 = New System.Windows.Forms.Label()
         Me.OpenFileButton8 = New System.Windows.Forms.Button()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Card1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.card2.SuspendLayout()
@@ -82,6 +85,7 @@ Partial Class JobForm
         Me.Card1.Controls.Add(Me.FileLocationText1)
         Me.Card1.Controls.Add(Me.OpenFileButton1)
         Me.Card1.Controls.Add(Me.CheckBox1)
+        Me.Card1.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Card1.Location = New System.Drawing.Point(22, 107)
         Me.Card1.Name = "Card1"
         Me.Card1.Size = New System.Drawing.Size(415, 111)
@@ -96,14 +100,16 @@ Partial Class JobForm
         Me.open1.Size = New System.Drawing.Size(116, 39)
         Me.open1.TabIndex = 3
         Me.open1.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open1, "Open The Cards File")
         Me.open1.UseVisualStyleBackColor = True
         '
         'FileLocationText1
         '
         Me.FileLocationText1.AutoSize = True
+        Me.FileLocationText1.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText1.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText1.Name = "FileLocationText1"
-        Me.FileLocationText1.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText1.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText1.TabIndex = 2
         Me.FileLocationText1.Text = "No File Selected"
         '
@@ -114,6 +120,7 @@ Partial Class JobForm
         Me.OpenFileButton1.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton1.TabIndex = 1
         Me.OpenFileButton1.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton1, "Add File to Card")
         Me.OpenFileButton1.UseVisualStyleBackColor = True
         '
         'CheckBox1
@@ -121,9 +128,10 @@ Partial Class JobForm
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox1.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox1.TabIndex = 0
         Me.CheckBox1.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox1, "Mark The Card as Complete")
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'OpenFileDialog1
@@ -132,23 +140,27 @@ Partial Class JobForm
         '
         'AddressText
         '
+        Me.AddressText.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.AddressText.AutoSize = True
-        Me.AddressText.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddressText.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AddressText.Font = New System.Drawing.Font("Calibri", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddressText.ForeColor = System.Drawing.Color.White
-        Me.AddressText.Location = New System.Drawing.Point(14, 46)
+        Me.AddressText.Location = New System.Drawing.Point(35, 46)
         Me.AddressText.Name = "AddressText"
-        Me.AddressText.Size = New System.Drawing.Size(139, 46)
+        Me.AddressText.Size = New System.Drawing.Size(128, 49)
         Me.AddressText.TabIndex = 1
         Me.AddressText.Text = "Label1"
         Me.AddressText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTip1.SetToolTip(Me.AddressText, "Job Address")
         '
         'SaveButton
         '
-        Me.SaveButton.Location = New System.Drawing.Point(379, 609)
+        Me.SaveButton.Location = New System.Drawing.Point(368, 1084)
         Me.SaveButton.Name = "SaveButton"
-        Me.SaveButton.Size = New System.Drawing.Size(89, 34)
+        Me.SaveButton.Size = New System.Drawing.Size(137, 43)
         Me.SaveButton.TabIndex = 2
         Me.SaveButton.Text = "Save"
+        Me.ToolTip1.SetToolTip(Me.SaveButton, "Save Job")
         Me.SaveButton.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -158,7 +170,8 @@ Partial Class JobForm
         Me.GroupBox1.Controls.Add(Me.FileLocationText5)
         Me.GroupBox1.Controls.Add(Me.OpenFileButton5)
         Me.GroupBox1.Controls.Add(Me.CheckBox5)
-        Me.GroupBox1.Location = New System.Drawing.Point(443, 107)
+        Me.GroupBox1.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(458, 107)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox1.TabIndex = 4
@@ -172,14 +185,16 @@ Partial Class JobForm
         Me.open5.Size = New System.Drawing.Size(116, 39)
         Me.open5.TabIndex = 3
         Me.open5.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open5, "Open The Cards File")
         Me.open5.UseVisualStyleBackColor = True
         '
         'FileLocationText5
         '
         Me.FileLocationText5.AutoSize = True
+        Me.FileLocationText5.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText5.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText5.Name = "FileLocationText5"
-        Me.FileLocationText5.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText5.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText5.TabIndex = 2
         Me.FileLocationText5.Text = "No File Selected"
         '
@@ -190,6 +205,7 @@ Partial Class JobForm
         Me.OpenFileButton5.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton5.TabIndex = 1
         Me.OpenFileButton5.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton5, "Add File to Card")
         Me.OpenFileButton5.UseVisualStyleBackColor = True
         '
         'CheckBox5
@@ -197,9 +213,10 @@ Partial Class JobForm
         Me.CheckBox5.AutoSize = True
         Me.CheckBox5.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox5.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox5.TabIndex = 0
         Me.CheckBox5.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox5, "Mark The Card as Complete")
         Me.CheckBox5.UseVisualStyleBackColor = True
         '
         'card2
@@ -209,6 +226,7 @@ Partial Class JobForm
         Me.card2.Controls.Add(Me.FileLocationText2)
         Me.card2.Controls.Add(Me.OpenFileButton2)
         Me.card2.Controls.Add(Me.CheckBox2)
+        Me.card2.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.card2.Location = New System.Drawing.Point(22, 224)
         Me.card2.Name = "card2"
         Me.card2.Size = New System.Drawing.Size(415, 111)
@@ -223,14 +241,16 @@ Partial Class JobForm
         Me.open2.Size = New System.Drawing.Size(116, 39)
         Me.open2.TabIndex = 3
         Me.open2.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open2, "Open The Cards File")
         Me.open2.UseVisualStyleBackColor = True
         '
         'FileLocationText2
         '
         Me.FileLocationText2.AutoSize = True
+        Me.FileLocationText2.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText2.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText2.Name = "FileLocationText2"
-        Me.FileLocationText2.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText2.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText2.TabIndex = 2
         Me.FileLocationText2.Text = "No File Selected"
         '
@@ -241,6 +261,7 @@ Partial Class JobForm
         Me.OpenFileButton2.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton2.TabIndex = 1
         Me.OpenFileButton2.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton2, "Add File to Card")
         Me.OpenFileButton2.UseVisualStyleBackColor = True
         '
         'CheckBox2
@@ -248,9 +269,10 @@ Partial Class JobForm
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox2.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox2.TabIndex = 0
         Me.CheckBox2.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox2, "Mark The Card as Complete")
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'GroupBox3
@@ -260,6 +282,7 @@ Partial Class JobForm
         Me.GroupBox3.Controls.Add(Me.FileLocationText3)
         Me.GroupBox3.Controls.Add(Me.OpenFileButton3)
         Me.GroupBox3.Controls.Add(Me.CheckBox3)
+        Me.GroupBox3.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(22, 341)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(415, 111)
@@ -274,14 +297,16 @@ Partial Class JobForm
         Me.open3.Size = New System.Drawing.Size(116, 39)
         Me.open3.TabIndex = 3
         Me.open3.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open3, "Open The Cards File")
         Me.open3.UseVisualStyleBackColor = True
         '
         'FileLocationText3
         '
         Me.FileLocationText3.AutoSize = True
+        Me.FileLocationText3.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText3.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText3.Name = "FileLocationText3"
-        Me.FileLocationText3.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText3.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText3.TabIndex = 2
         Me.FileLocationText3.Text = "No File Selected"
         '
@@ -292,6 +317,7 @@ Partial Class JobForm
         Me.OpenFileButton3.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton3.TabIndex = 1
         Me.OpenFileButton3.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton3, "Add File to Card")
         Me.OpenFileButton3.UseVisualStyleBackColor = True
         '
         'CheckBox3
@@ -299,9 +325,10 @@ Partial Class JobForm
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox3.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox3.TabIndex = 0
         Me.CheckBox3.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox3, "Mark The Card as Complete")
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
         'GroupBox4
@@ -311,6 +338,7 @@ Partial Class JobForm
         Me.GroupBox4.Controls.Add(Me.FileLocationText4)
         Me.GroupBox4.Controls.Add(Me.OpenFileButton4)
         Me.GroupBox4.Controls.Add(Me.CheckBox4)
+        Me.GroupBox4.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(22, 458)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(415, 111)
@@ -325,14 +353,16 @@ Partial Class JobForm
         Me.open4.Size = New System.Drawing.Size(116, 39)
         Me.open4.TabIndex = 3
         Me.open4.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open4, "Open The Cards File")
         Me.open4.UseVisualStyleBackColor = True
         '
         'FileLocationText4
         '
         Me.FileLocationText4.AutoSize = True
+        Me.FileLocationText4.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText4.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText4.Name = "FileLocationText4"
-        Me.FileLocationText4.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText4.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText4.TabIndex = 2
         Me.FileLocationText4.Text = "No File Selected"
         '
@@ -343,6 +373,7 @@ Partial Class JobForm
         Me.OpenFileButton4.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton4.TabIndex = 1
         Me.OpenFileButton4.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton4, "Add File to Card")
         Me.OpenFileButton4.UseVisualStyleBackColor = True
         '
         'CheckBox4
@@ -350,9 +381,10 @@ Partial Class JobForm
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox4.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox4.TabIndex = 0
         Me.CheckBox4.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox4, "Mark The Card as Complete")
         Me.CheckBox4.UseVisualStyleBackColor = True
         '
         'GroupBox5
@@ -362,7 +394,8 @@ Partial Class JobForm
         Me.GroupBox5.Controls.Add(Me.FileLocationText6)
         Me.GroupBox5.Controls.Add(Me.OpenFileButton6)
         Me.GroupBox5.Controls.Add(Me.CheckBox6)
-        Me.GroupBox5.Location = New System.Drawing.Point(443, 224)
+        Me.GroupBox5.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.Location = New System.Drawing.Point(458, 224)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox5.TabIndex = 5
@@ -376,14 +409,16 @@ Partial Class JobForm
         Me.open6.Size = New System.Drawing.Size(116, 39)
         Me.open6.TabIndex = 3
         Me.open6.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open6, "Open The Cards File")
         Me.open6.UseVisualStyleBackColor = True
         '
         'FileLocationText6
         '
         Me.FileLocationText6.AutoSize = True
+        Me.FileLocationText6.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText6.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText6.Name = "FileLocationText6"
-        Me.FileLocationText6.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText6.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText6.TabIndex = 2
         Me.FileLocationText6.Text = "No File Selected"
         '
@@ -394,6 +429,7 @@ Partial Class JobForm
         Me.OpenFileButton6.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton6.TabIndex = 1
         Me.OpenFileButton6.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton6, "Add File to Card")
         Me.OpenFileButton6.UseVisualStyleBackColor = True
         '
         'CheckBox6
@@ -401,9 +437,10 @@ Partial Class JobForm
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox6.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox6.TabIndex = 0
         Me.CheckBox6.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox6, "Mark The Card as Complete")
         Me.CheckBox6.UseVisualStyleBackColor = True
         '
         'GroupBox6
@@ -413,7 +450,8 @@ Partial Class JobForm
         Me.GroupBox6.Controls.Add(Me.FileLocationText7)
         Me.GroupBox6.Controls.Add(Me.OpenFileButton7)
         Me.GroupBox6.Controls.Add(Me.CheckBox7)
-        Me.GroupBox6.Location = New System.Drawing.Point(443, 341)
+        Me.GroupBox6.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox6.Location = New System.Drawing.Point(458, 341)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox6.TabIndex = 5
@@ -427,14 +465,16 @@ Partial Class JobForm
         Me.open7.Size = New System.Drawing.Size(116, 39)
         Me.open7.TabIndex = 3
         Me.open7.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open7, "Open The Cards File")
         Me.open7.UseVisualStyleBackColor = True
         '
         'FileLocationText7
         '
         Me.FileLocationText7.AutoSize = True
+        Me.FileLocationText7.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText7.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText7.Name = "FileLocationText7"
-        Me.FileLocationText7.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText7.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText7.TabIndex = 2
         Me.FileLocationText7.Text = "No File Selected"
         '
@@ -445,6 +485,7 @@ Partial Class JobForm
         Me.OpenFileButton7.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton7.TabIndex = 1
         Me.OpenFileButton7.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton7, "Add File to Card")
         Me.OpenFileButton7.UseVisualStyleBackColor = True
         '
         'CheckBox7
@@ -452,9 +493,10 @@ Partial Class JobForm
         Me.CheckBox7.AutoSize = True
         Me.CheckBox7.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox7.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox7.TabIndex = 0
         Me.CheckBox7.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox7, "Mark The Card as Complete")
         Me.CheckBox7.UseVisualStyleBackColor = True
         '
         'GroupBox7
@@ -464,7 +506,8 @@ Partial Class JobForm
         Me.GroupBox7.Controls.Add(Me.FileLocationText8)
         Me.GroupBox7.Controls.Add(Me.OpenFileButton8)
         Me.GroupBox7.Controls.Add(Me.CheckBox8)
-        Me.GroupBox7.Location = New System.Drawing.Point(443, 458)
+        Me.GroupBox7.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox7.Location = New System.Drawing.Point(458, 458)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(415, 111)
         Me.GroupBox7.TabIndex = 5
@@ -478,14 +521,16 @@ Partial Class JobForm
         Me.open8.Size = New System.Drawing.Size(116, 39)
         Me.open8.TabIndex = 3
         Me.open8.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open8, "Open The Cards File")
         Me.open8.UseVisualStyleBackColor = True
         '
         'FileLocationText8
         '
         Me.FileLocationText8.AutoSize = True
+        Me.FileLocationText8.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FileLocationText8.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText8.Name = "FileLocationText8"
-        Me.FileLocationText8.Size = New System.Drawing.Size(125, 20)
+        Me.FileLocationText8.Size = New System.Drawing.Size(113, 19)
         Me.FileLocationText8.TabIndex = 2
         Me.FileLocationText8.Text = "No File Selected"
         '
@@ -496,6 +541,7 @@ Partial Class JobForm
         Me.OpenFileButton8.Size = New System.Drawing.Size(116, 39)
         Me.OpenFileButton8.TabIndex = 1
         Me.OpenFileButton8.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton8, "Add File to Card")
         Me.OpenFileButton8.UseVisualStyleBackColor = True
         '
         'CheckBox8
@@ -503,9 +549,10 @@ Partial Class JobForm
         Me.CheckBox8.AutoSize = True
         Me.CheckBox8.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(112, 24)
+        Me.CheckBox8.Size = New System.Drawing.Size(128, 28)
         Me.CheckBox8.TabIndex = 0
         Me.CheckBox8.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox8, "Mark The Card as Complete")
         Me.CheckBox8.UseVisualStyleBackColor = True
         '
         'JobForm
@@ -513,7 +560,7 @@ Partial Class JobForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(876, 1406)
+        Me.ClientSize = New System.Drawing.Size(918, 1180)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
@@ -525,6 +572,7 @@ Partial Class JobForm
         Me.Controls.Add(Me.AddressText)
         Me.Controls.Add(Me.Card1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "JobForm"
         Me.Text = "Job Entry"
         Me.Card1.ResumeLayout(False)
@@ -591,4 +639,5 @@ Partial Class JobForm
     Friend WithEvents FileLocationText8 As Label
     Friend WithEvents OpenFileButton8 As Button
     Friend WithEvents CheckBox8 As CheckBox
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
