@@ -35,7 +35,7 @@ Partial Class MainMenu
         '
         Me.LoadFileButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LoadFileButton.Image = Global.ElevatorInstalationTracker.My.Resources.Resources.folder
-        Me.LoadFileButton.Location = New System.Drawing.Point(504, 894)
+        Me.LoadFileButton.Location = New System.Drawing.Point(344, 837)
         Me.LoadFileButton.Name = "LoadFileButton"
         Me.LoadFileButton.Size = New System.Drawing.Size(200, 200)
         Me.LoadFileButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -47,7 +47,7 @@ Partial Class MainMenu
         '
         Me.NewJobButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.NewJobButton.Image = Global.ElevatorInstalationTracker.My.Resources.Resources.Add
-        Me.NewJobButton.Location = New System.Drawing.Point(188, 894)
+        Me.NewJobButton.Location = New System.Drawing.Point(344, 584)
         Me.NewJobButton.Name = "NewJobButton"
         Me.NewJobButton.Size = New System.Drawing.Size(200, 200)
         Me.NewJobButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -59,6 +59,7 @@ Partial Class MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(878, 1144)
         Me.Controls.Add(Me.LoadFileButton)
         Me.Controls.Add(Me.NewJobButton)

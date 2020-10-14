@@ -23,17 +23,19 @@ Public Class JobForm
         Dim file As String
 
         If OpenFileDialog1.ShowDialog <> Windows.Forms.DialogResult.Cancel Then
-            If cardStr.Text <> "No File Selected" Then
-                My.Computer.FileSystem.DeleteFile(cardStr.Text)
-                path = OpenFileDialog1.FileName
-                file = Dir(path)
-                My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
-                cardStr.Text = (My.Settings.FolderLocation & AddressText.Text & "\" & file)
+
+            path = OpenFileDialog1.FileName
+            file = Dir(path)
+
+            If Directory.Exists(cardStr.Text = (My.Settings.FolderLocation & AddressText.Text & "\" & file)) Then
+                Exit Sub
             Else
-                path = OpenFileDialog1.FileName
-                file = Dir(path)
-                My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
+                If cardStr.Text <> "No File Selected" Then
+                    My.Computer.FileSystem.DeleteFile(cardStr.Text)
+                End If
+
                 cardStr.Text = (My.Settings.FolderLocation & AddressText.Text & "\" & file)
+                My.Computer.FileSystem.CopyFile(path, My.Settings.FolderLocation & AddressText.Text & "\" & file)
             End If
         End If
 
@@ -41,7 +43,6 @@ Public Class JobForm
     End Sub
 
     Private Sub SaveForm()
-
         'FileWriter.Close()
 
         FileWriter = New StreamWriter(My.Settings.FolderLocation & AddressText.Text & "\#tracker.txt", False)
@@ -71,6 +72,30 @@ Public Class JobForm
 
         FileWriter.WriteLine(CheckBox8.Name & "|" & CheckBox8.Checked.ToString())
         FileWriter.WriteLine(FileLocationText8.Name & "|" & FileLocationText8.Text)
+
+        FileWriter.WriteLine(CheckBox9.Name & "|" & CheckBox9.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText9.Name & "|" & FileLocationText9.Text)
+
+        FileWriter.WriteLine(CheckBox10.Name & "|" & CheckBox10.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText10.Name & "|" & FileLocationText10.Text)
+
+        FileWriter.WriteLine(CheckBox11.Name & "|" & CheckBox11.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText11.Name & "|" & FileLocationText11.Text)
+
+        FileWriter.WriteLine(CheckBox12.Name & "|" & CheckBox12.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText12.Name & "|" & FileLocationText12.Text)
+
+        FileWriter.WriteLine(CheckBox13.Name & "|" & CheckBox13.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText13.Name & "|" & FileLocationText13.Text)
+
+        FileWriter.WriteLine(CheckBox14.Name & "|" & CheckBox14.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText14.Name & "|" & FileLocationText14.Text)
+
+        FileWriter.WriteLine(CheckBox15.Name & "|" & CheckBox15.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText15.Name & "|" & FileLocationText15.Text)
+
+        FileWriter.WriteLine(CheckBox16.Name & "|" & CheckBox16.Checked.ToString())
+        FileWriter.WriteLine(FileLocationText16.Name & "|" & FileLocationText16.Text)
 
         FileWriter.Flush()
         FileWriter.Close()
@@ -127,6 +152,55 @@ Public Class JobForm
             open8.Enabled = True
         End If
 
+        If FileLocationText9.Text = "No File Selected" Then
+            open9.Enabled = False
+        Else
+            open9.Enabled = True
+        End If
+
+        If FileLocationText10.Text = "No File Selected" Then
+            open10.Enabled = False
+        Else
+            open10.Enabled = True
+        End If
+
+        If FileLocationText11.Text = "No File Selected" Then
+            open11.Enabled = False
+        Else
+            open11.Enabled = True
+        End If
+
+        If FileLocationText12.Text = "No File Selected" Then
+            open12.Enabled = False
+        Else
+            open12.Enabled = True
+        End If
+
+        If FileLocationText13.Text = "No File Selected" Then
+            open13.Enabled = False
+        Else
+            open13.Enabled = True
+        End If
+
+        If FileLocationText14.Text = "No File Selected" Then
+            open14.Enabled = False
+        Else
+            open14.Enabled = True
+        End If
+
+        If FileLocationText15.Text = "No File Selected" Then
+            open15.Enabled = False
+        Else
+            open15.Enabled = True
+        End If
+
+        If FileLocationText16.Text = "No File Selected" Then
+            open16.Enabled = False
+        Else
+            open16.Enabled = True
+        End If
+
+
         SaveForm()
     End Sub
 
@@ -162,6 +236,38 @@ Public Class JobForm
         AddFile(FileLocationText8)
     End Sub
 
+    Private Sub OpenFileButton9_Click(sender As Object, e As EventArgs) Handles OpenFileButton9.Click
+        AddFile(FileLocationText9)
+    End Sub
+
+    Private Sub OpenFileButton10_Click(sender As Object, e As EventArgs) Handles OpenFileButton10.Click
+        AddFile(FileLocationText10)
+    End Sub
+
+    Private Sub OpenFileButton11_Click(sender As Object, e As EventArgs) Handles OpenFileButton11.Click
+        AddFile(FileLocationText11)
+    End Sub
+
+    Private Sub OpenFileButton12_Click(sender As Object, e As EventArgs) Handles OpenFileButton12.Click
+        AddFile(FileLocationText12)
+    End Sub
+
+    Private Sub OpenFileButton13_Click(sender As Object, e As EventArgs) Handles OpenFileButton13.Click
+        AddFile(FileLocationText13)
+    End Sub
+
+    Private Sub OpenFileButton14_Click(sender As Object, e As EventArgs) Handles OpenFileButton14.Click
+        AddFile(FileLocationText14)
+    End Sub
+
+    Private Sub OpenFileButton15_Click(sender As Object, e As EventArgs) Handles OpenFileButton15.Click
+        AddFile(FileLocationText15)
+    End Sub
+
+    Private Sub OpenFileButton16_Click(sender As Object, e As EventArgs) Handles OpenFileButton16.Click
+        AddFile(FileLocationText16)
+    End Sub
+
     Private Sub open1_Click(sender As Object, e As EventArgs) Handles open1.Click
         Process.Start(FileLocationText1.Text)
     End Sub
@@ -192,6 +298,38 @@ Public Class JobForm
 
     Private Sub open8_Click(sender As Object, e As EventArgs) Handles open8.Click
         Process.Start(FileLocationText8.Text)
+    End Sub
+
+    Private Sub open9_Click(sender As Object, e As EventArgs) Handles open9.Click
+        Process.Start(FileLocationText9.Text)
+    End Sub
+
+    Private Sub open10_Click(sender As Object, e As EventArgs) Handles open10.Click
+        Process.Start(FileLocationText10.Text)
+    End Sub
+
+    Private Sub open11_Click(sender As Object, e As EventArgs) Handles open11.Click
+        Process.Start(FileLocationText11.Text)
+    End Sub
+
+    Private Sub open12_Click(sender As Object, e As EventArgs) Handles open12.Click
+        Process.Start(FileLocationText12.Text)
+    End Sub
+
+    Private Sub open13_Click(sender As Object, e As EventArgs) Handles open13.Click
+        Process.Start(FileLocationText13.Text)
+    End Sub
+
+    Private Sub open14_Click(sender As Object, e As EventArgs) Handles open14.Click
+        Process.Start(FileLocationText14.Text)
+    End Sub
+
+    Private Sub open15_Click(sender As Object, e As EventArgs) Handles open15.Click
+        Process.Start(FileLocationText15.Text)
+    End Sub
+
+    Private Sub open16_Click(sender As Object, e As EventArgs) Handles open16.Click
+        Process.Start(FileLocationText16.Text)
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -258,7 +396,68 @@ Public Class JobForm
         End If
     End Sub
 
-    Private Sub GroupBox7_Enter(sender As Object, e As EventArgs) Handles GroupBox7.Enter
-
+    Private Sub CheckBox9_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox9.CheckedChanged
+        If CheckBox9.Checked Then
+            GroupBox2.BackColor = Color.Green
+        ElseIf Not CheckBox2.Checked Then
+            GroupBox7.BackColor = Color.White
+        End If
     End Sub
+
+    Private Sub CheckBox10_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox10.CheckedChanged
+        If CheckBox10.Checked Then
+            GroupBox8.BackColor = Color.Green
+        ElseIf Not CheckBox10.Checked Then
+            GroupBox8.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox11_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox11.CheckedChanged
+        If CheckBox11.Checked Then
+            GroupBox9.BackColor = Color.Green
+        ElseIf Not CheckBox11.Checked Then
+            GroupBox9.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox12_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox12.CheckedChanged
+        If CheckBox12.Checked Then
+            GroupBox10.BackColor = Color.Green
+        ElseIf Not CheckBox12.Checked Then
+            GroupBox10.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox13_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox13.CheckedChanged
+        If CheckBox13.Checked Then
+            GroupBox11.BackColor = Color.Green
+        ElseIf Not CheckBox13.Checked Then
+            GroupBox11.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox14_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox14.CheckedChanged
+        If CheckBox14.Checked Then
+            GroupBox12.BackColor = Color.Green
+        ElseIf Not CheckBox14.Checked Then
+            GroupBox12.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox15_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox15.CheckedChanged
+        If CheckBox15.Checked Then
+            GroupBox13.BackColor = Color.Green
+        ElseIf Not CheckBox15.Checked Then
+            GroupBox13.BackColor = Color.White
+        End If
+    End Sub
+
+    Private Sub CheckBox16_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox16.CheckedChanged
+        If CheckBox16.Checked Then
+            GroupBox14.BackColor = Color.Green
+        ElseIf Not CheckBox16.Checked Then
+            GroupBox14.BackColor = Color.White
+        End If
+    End Sub
+
 End Class

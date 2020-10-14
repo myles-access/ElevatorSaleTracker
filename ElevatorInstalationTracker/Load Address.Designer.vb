@@ -59,7 +59,7 @@ Partial Class LoadAddress
         Me.FIleLoadButton.Location = New System.Drawing.Point(12, 133)
         Me.FIleLoadButton.Name = "FIleLoadButton"
         Me.FIleLoadButton.Size = New System.Drawing.Size(211, 74)
-        Me.FIleLoadButton.TabIndex = 2
+        Me.FIleLoadButton.TabIndex = 1
         Me.FIleLoadButton.Text = "Pick Job From File"
         Me.ToolTip1.SetToolTip(Me.FIleLoadButton, "Load Job From a File")
         Me.FIleLoadButton.UseVisualStyleBackColor = True
@@ -73,7 +73,7 @@ Partial Class LoadAddress
         Me.Button1.Location = New System.Drawing.Point(633, 166)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(211, 31)
-        Me.Button1.TabIndex = 3
+        Me.Button1.TabIndex = 2
         Me.Button1.Text = "Sort Jobs"
         Me.ToolTip1.SetToolTip(Me.Button1, "Re-Sort List of Jobs")
         Me.Button1.UseVisualStyleBackColor = True

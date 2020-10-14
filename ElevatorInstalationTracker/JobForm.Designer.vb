@@ -68,6 +68,46 @@ Partial Class JobForm
         Me.OpenFileButton8 = New System.Windows.Forms.Button()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.open10 = New System.Windows.Forms.Button()
+        Me.OpenFileButton10 = New System.Windows.Forms.Button()
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.open9 = New System.Windows.Forms.Button()
+        Me.OpenFileButton9 = New System.Windows.Forms.Button()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.open12 = New System.Windows.Forms.Button()
+        Me.OpenFileButton12 = New System.Windows.Forms.Button()
+        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
+        Me.open11 = New System.Windows.Forms.Button()
+        Me.OpenFileButton11 = New System.Windows.Forms.Button()
+        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
+        Me.open14 = New System.Windows.Forms.Button()
+        Me.OpenFileButton14 = New System.Windows.Forms.Button()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.open13 = New System.Windows.Forms.Button()
+        Me.OpenFileButton13 = New System.Windows.Forms.Button()
+        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.open16 = New System.Windows.Forms.Button()
+        Me.OpenFileButton16 = New System.Windows.Forms.Button()
+        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
+        Me.open15 = New System.Windows.Forms.Button()
+        Me.OpenFileButton15 = New System.Windows.Forms.Button()
+        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText10 = New System.Windows.Forms.Label()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText9 = New System.Windows.Forms.Label()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText12 = New System.Windows.Forms.Label()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText11 = New System.Windows.Forms.Label()
+        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText14 = New System.Windows.Forms.Label()
+        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText13 = New System.Windows.Forms.Label()
+        Me.GroupBox13 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText16 = New System.Windows.Forms.Label()
+        Me.GroupBox14 = New System.Windows.Forms.GroupBox()
+        Me.FileLocationText15 = New System.Windows.Forms.Label()
         Me.Card1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.card2.SuspendLayout()
@@ -76,6 +116,14 @@ Partial Class JobForm
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
+        Me.GroupBox10.SuspendLayout()
+        Me.GroupBox11.SuspendLayout()
+        Me.GroupBox12.SuspendLayout()
+        Me.GroupBox13.SuspendLayout()
+        Me.GroupBox14.SuspendLayout()
         Me.SuspendLayout()
         '
         'Card1
@@ -89,7 +137,7 @@ Partial Class JobForm
         Me.Card1.Location = New System.Drawing.Point(22, 107)
         Me.Card1.Name = "Card1"
         Me.Card1.Size = New System.Drawing.Size(415, 111)
-        Me.Card1.TabIndex = 0
+        Me.Card1.TabIndex = 1
         Me.Card1.TabStop = False
         Me.Card1.Text = "Sell Lift"
         '
@@ -98,7 +146,7 @@ Partial Class JobForm
         Me.open1.Location = New System.Drawing.Point(128, 25)
         Me.open1.Name = "open1"
         Me.open1.Size = New System.Drawing.Size(116, 39)
-        Me.open1.TabIndex = 3
+        Me.open1.TabIndex = 2
         Me.open1.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open1, "Open The Cards File")
         Me.open1.UseVisualStyleBackColor = True
@@ -110,7 +158,7 @@ Partial Class JobForm
         Me.FileLocationText1.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText1.Name = "FileLocationText1"
         Me.FileLocationText1.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText1.TabIndex = 2
+        Me.FileLocationText1.TabIndex = 3
         Me.FileLocationText1.Text = "No File Selected"
         '
         'OpenFileButton1
@@ -118,7 +166,7 @@ Partial Class JobForm
         Me.OpenFileButton1.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton1.Name = "OpenFileButton1"
         Me.OpenFileButton1.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton1.TabIndex = 1
+        Me.OpenFileButton1.TabIndex = 0
         Me.OpenFileButton1.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton1, "Add File to Card")
         Me.OpenFileButton1.UseVisualStyleBackColor = True
@@ -129,7 +177,7 @@ Partial Class JobForm
         Me.CheckBox1.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox1.TabIndex = 0
+        Me.CheckBox1.TabIndex = 1
         Me.CheckBox1.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox1, "Mark The Card as Complete")
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -148,17 +196,17 @@ Partial Class JobForm
         Me.AddressText.Location = New System.Drawing.Point(35, 46)
         Me.AddressText.Name = "AddressText"
         Me.AddressText.Size = New System.Drawing.Size(128, 49)
-        Me.AddressText.TabIndex = 1
+        Me.AddressText.TabIndex = 0
         Me.AddressText.Text = "Label1"
         Me.AddressText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ToolTip1.SetToolTip(Me.AddressText, "Job Address")
         '
         'SaveButton
         '
-        Me.SaveButton.Location = New System.Drawing.Point(368, 1084)
+        Me.SaveButton.Location = New System.Drawing.Point(383, 1076)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Size = New System.Drawing.Size(137, 43)
-        Me.SaveButton.TabIndex = 2
+        Me.SaveButton.TabIndex = 9
         Me.SaveButton.Text = "Save"
         Me.ToolTip1.SetToolTip(Me.SaveButton, "Save Job")
         Me.SaveButton.UseVisualStyleBackColor = True
@@ -174,7 +222,7 @@ Partial Class JobForm
         Me.GroupBox1.Location = New System.Drawing.Point(458, 107)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(415, 111)
-        Me.GroupBox1.TabIndex = 4
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Sell Lift"
         '
@@ -183,7 +231,7 @@ Partial Class JobForm
         Me.open5.Location = New System.Drawing.Point(128, 25)
         Me.open5.Name = "open5"
         Me.open5.Size = New System.Drawing.Size(116, 39)
-        Me.open5.TabIndex = 3
+        Me.open5.TabIndex = 2
         Me.open5.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open5, "Open The Cards File")
         Me.open5.UseVisualStyleBackColor = True
@@ -195,7 +243,7 @@ Partial Class JobForm
         Me.FileLocationText5.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText5.Name = "FileLocationText5"
         Me.FileLocationText5.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText5.TabIndex = 2
+        Me.FileLocationText5.TabIndex = 3
         Me.FileLocationText5.Text = "No File Selected"
         '
         'OpenFileButton5
@@ -203,7 +251,7 @@ Partial Class JobForm
         Me.OpenFileButton5.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton5.Name = "OpenFileButton5"
         Me.OpenFileButton5.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton5.TabIndex = 1
+        Me.OpenFileButton5.TabIndex = 0
         Me.OpenFileButton5.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton5, "Add File to Card")
         Me.OpenFileButton5.UseVisualStyleBackColor = True
@@ -214,7 +262,7 @@ Partial Class JobForm
         Me.CheckBox5.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox5.TabIndex = 0
+        Me.CheckBox5.TabIndex = 1
         Me.CheckBox5.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox5, "Mark The Card as Complete")
         Me.CheckBox5.UseVisualStyleBackColor = True
@@ -230,7 +278,7 @@ Partial Class JobForm
         Me.card2.Location = New System.Drawing.Point(22, 224)
         Me.card2.Name = "card2"
         Me.card2.Size = New System.Drawing.Size(415, 111)
-        Me.card2.TabIndex = 4
+        Me.card2.TabIndex = 3
         Me.card2.TabStop = False
         Me.card2.Text = "Sell Lift"
         '
@@ -239,7 +287,7 @@ Partial Class JobForm
         Me.open2.Location = New System.Drawing.Point(128, 25)
         Me.open2.Name = "open2"
         Me.open2.Size = New System.Drawing.Size(116, 39)
-        Me.open2.TabIndex = 3
+        Me.open2.TabIndex = 2
         Me.open2.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open2, "Open The Cards File")
         Me.open2.UseVisualStyleBackColor = True
@@ -251,7 +299,7 @@ Partial Class JobForm
         Me.FileLocationText2.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText2.Name = "FileLocationText2"
         Me.FileLocationText2.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText2.TabIndex = 2
+        Me.FileLocationText2.TabIndex = 3
         Me.FileLocationText2.Text = "No File Selected"
         '
         'OpenFileButton2
@@ -259,7 +307,7 @@ Partial Class JobForm
         Me.OpenFileButton2.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton2.Name = "OpenFileButton2"
         Me.OpenFileButton2.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton2.TabIndex = 1
+        Me.OpenFileButton2.TabIndex = 0
         Me.OpenFileButton2.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton2, "Add File to Card")
         Me.OpenFileButton2.UseVisualStyleBackColor = True
@@ -270,7 +318,7 @@ Partial Class JobForm
         Me.CheckBox2.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox2.TabIndex = 0
+        Me.CheckBox2.TabIndex = 1
         Me.CheckBox2.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox2, "Mark The Card as Complete")
         Me.CheckBox2.UseVisualStyleBackColor = True
@@ -286,7 +334,7 @@ Partial Class JobForm
         Me.GroupBox3.Location = New System.Drawing.Point(22, 341)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(415, 111)
-        Me.GroupBox3.TabIndex = 4
+        Me.GroupBox3.TabIndex = 5
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Sell Lift"
         '
@@ -295,7 +343,7 @@ Partial Class JobForm
         Me.open3.Location = New System.Drawing.Point(128, 25)
         Me.open3.Name = "open3"
         Me.open3.Size = New System.Drawing.Size(116, 39)
-        Me.open3.TabIndex = 3
+        Me.open3.TabIndex = 2
         Me.open3.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open3, "Open The Cards File")
         Me.open3.UseVisualStyleBackColor = True
@@ -307,7 +355,7 @@ Partial Class JobForm
         Me.FileLocationText3.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText3.Name = "FileLocationText3"
         Me.FileLocationText3.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText3.TabIndex = 2
+        Me.FileLocationText3.TabIndex = 3
         Me.FileLocationText3.Text = "No File Selected"
         '
         'OpenFileButton3
@@ -315,7 +363,7 @@ Partial Class JobForm
         Me.OpenFileButton3.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton3.Name = "OpenFileButton3"
         Me.OpenFileButton3.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton3.TabIndex = 1
+        Me.OpenFileButton3.TabIndex = 0
         Me.OpenFileButton3.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton3, "Add File to Card")
         Me.OpenFileButton3.UseVisualStyleBackColor = True
@@ -326,7 +374,7 @@ Partial Class JobForm
         Me.CheckBox3.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox3.TabIndex = 0
+        Me.CheckBox3.TabIndex = 1
         Me.CheckBox3.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox3, "Mark The Card as Complete")
         Me.CheckBox3.UseVisualStyleBackColor = True
@@ -342,7 +390,7 @@ Partial Class JobForm
         Me.GroupBox4.Location = New System.Drawing.Point(22, 458)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(415, 111)
-        Me.GroupBox4.TabIndex = 4
+        Me.GroupBox4.TabIndex = 7
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Sell Lift"
         '
@@ -351,7 +399,7 @@ Partial Class JobForm
         Me.open4.Location = New System.Drawing.Point(128, 25)
         Me.open4.Name = "open4"
         Me.open4.Size = New System.Drawing.Size(116, 39)
-        Me.open4.TabIndex = 3
+        Me.open4.TabIndex = 2
         Me.open4.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open4, "Open The Cards File")
         Me.open4.UseVisualStyleBackColor = True
@@ -363,7 +411,7 @@ Partial Class JobForm
         Me.FileLocationText4.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText4.Name = "FileLocationText4"
         Me.FileLocationText4.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText4.TabIndex = 2
+        Me.FileLocationText4.TabIndex = 3
         Me.FileLocationText4.Text = "No File Selected"
         '
         'OpenFileButton4
@@ -371,7 +419,7 @@ Partial Class JobForm
         Me.OpenFileButton4.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton4.Name = "OpenFileButton4"
         Me.OpenFileButton4.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton4.TabIndex = 1
+        Me.OpenFileButton4.TabIndex = 0
         Me.OpenFileButton4.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton4, "Add File to Card")
         Me.OpenFileButton4.UseVisualStyleBackColor = True
@@ -382,7 +430,7 @@ Partial Class JobForm
         Me.CheckBox4.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox4.TabIndex = 0
+        Me.CheckBox4.TabIndex = 1
         Me.CheckBox4.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox4, "Mark The Card as Complete")
         Me.CheckBox4.UseVisualStyleBackColor = True
@@ -398,7 +446,7 @@ Partial Class JobForm
         Me.GroupBox5.Location = New System.Drawing.Point(458, 224)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(415, 111)
-        Me.GroupBox5.TabIndex = 5
+        Me.GroupBox5.TabIndex = 4
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Sell Lift"
         '
@@ -407,7 +455,7 @@ Partial Class JobForm
         Me.open6.Location = New System.Drawing.Point(128, 25)
         Me.open6.Name = "open6"
         Me.open6.Size = New System.Drawing.Size(116, 39)
-        Me.open6.TabIndex = 3
+        Me.open6.TabIndex = 2
         Me.open6.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open6, "Open The Cards File")
         Me.open6.UseVisualStyleBackColor = True
@@ -419,7 +467,7 @@ Partial Class JobForm
         Me.FileLocationText6.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText6.Name = "FileLocationText6"
         Me.FileLocationText6.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText6.TabIndex = 2
+        Me.FileLocationText6.TabIndex = 3
         Me.FileLocationText6.Text = "No File Selected"
         '
         'OpenFileButton6
@@ -427,7 +475,7 @@ Partial Class JobForm
         Me.OpenFileButton6.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton6.Name = "OpenFileButton6"
         Me.OpenFileButton6.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton6.TabIndex = 1
+        Me.OpenFileButton6.TabIndex = 0
         Me.OpenFileButton6.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton6, "Add File to Card")
         Me.OpenFileButton6.UseVisualStyleBackColor = True
@@ -438,7 +486,7 @@ Partial Class JobForm
         Me.CheckBox6.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox6.TabIndex = 0
+        Me.CheckBox6.TabIndex = 1
         Me.CheckBox6.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox6, "Mark The Card as Complete")
         Me.CheckBox6.UseVisualStyleBackColor = True
@@ -454,7 +502,7 @@ Partial Class JobForm
         Me.GroupBox6.Location = New System.Drawing.Point(458, 341)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(415, 111)
-        Me.GroupBox6.TabIndex = 5
+        Me.GroupBox6.TabIndex = 6
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Sell Lift"
         '
@@ -463,7 +511,7 @@ Partial Class JobForm
         Me.open7.Location = New System.Drawing.Point(128, 25)
         Me.open7.Name = "open7"
         Me.open7.Size = New System.Drawing.Size(116, 39)
-        Me.open7.TabIndex = 3
+        Me.open7.TabIndex = 2
         Me.open7.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open7, "Open The Cards File")
         Me.open7.UseVisualStyleBackColor = True
@@ -475,7 +523,7 @@ Partial Class JobForm
         Me.FileLocationText7.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText7.Name = "FileLocationText7"
         Me.FileLocationText7.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText7.TabIndex = 2
+        Me.FileLocationText7.TabIndex = 3
         Me.FileLocationText7.Text = "No File Selected"
         '
         'OpenFileButton7
@@ -483,7 +531,7 @@ Partial Class JobForm
         Me.OpenFileButton7.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton7.Name = "OpenFileButton7"
         Me.OpenFileButton7.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton7.TabIndex = 1
+        Me.OpenFileButton7.TabIndex = 0
         Me.OpenFileButton7.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton7, "Add File to Card")
         Me.OpenFileButton7.UseVisualStyleBackColor = True
@@ -494,7 +542,7 @@ Partial Class JobForm
         Me.CheckBox7.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox7.Name = "CheckBox7"
         Me.CheckBox7.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox7.TabIndex = 0
+        Me.CheckBox7.TabIndex = 1
         Me.CheckBox7.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox7, "Mark The Card as Complete")
         Me.CheckBox7.UseVisualStyleBackColor = True
@@ -510,7 +558,7 @@ Partial Class JobForm
         Me.GroupBox7.Location = New System.Drawing.Point(458, 458)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(415, 111)
-        Me.GroupBox7.TabIndex = 5
+        Me.GroupBox7.TabIndex = 8
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Sell Lift"
         '
@@ -519,7 +567,7 @@ Partial Class JobForm
         Me.open8.Location = New System.Drawing.Point(128, 25)
         Me.open8.Name = "open8"
         Me.open8.Size = New System.Drawing.Size(116, 39)
-        Me.open8.TabIndex = 3
+        Me.open8.TabIndex = 2
         Me.open8.Text = "Open File"
         Me.ToolTip1.SetToolTip(Me.open8, "Open The Cards File")
         Me.open8.UseVisualStyleBackColor = True
@@ -531,7 +579,7 @@ Partial Class JobForm
         Me.FileLocationText8.Location = New System.Drawing.Point(6, 77)
         Me.FileLocationText8.Name = "FileLocationText8"
         Me.FileLocationText8.Size = New System.Drawing.Size(113, 19)
-        Me.FileLocationText8.TabIndex = 2
+        Me.FileLocationText8.TabIndex = 3
         Me.FileLocationText8.Text = "No File Selected"
         '
         'OpenFileButton8
@@ -539,7 +587,7 @@ Partial Class JobForm
         Me.OpenFileButton8.Location = New System.Drawing.Point(6, 25)
         Me.OpenFileButton8.Name = "OpenFileButton8"
         Me.OpenFileButton8.Size = New System.Drawing.Size(116, 39)
-        Me.OpenFileButton8.TabIndex = 1
+        Me.OpenFileButton8.TabIndex = 0
         Me.OpenFileButton8.Text = "Add File"
         Me.ToolTip1.SetToolTip(Me.OpenFileButton8, "Add File to Card")
         Me.OpenFileButton8.UseVisualStyleBackColor = True
@@ -550,10 +598,458 @@ Partial Class JobForm
         Me.CheckBox8.Location = New System.Drawing.Point(264, 33)
         Me.CheckBox8.Name = "CheckBox8"
         Me.CheckBox8.Size = New System.Drawing.Size(128, 28)
-        Me.CheckBox8.TabIndex = 0
+        Me.CheckBox8.TabIndex = 1
         Me.CheckBox8.Text = "Completed"
         Me.ToolTip1.SetToolTip(Me.CheckBox8, "Mark The Card as Complete")
         Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'open10
+        '
+        Me.open10.Location = New System.Drawing.Point(128, 25)
+        Me.open10.Name = "open10"
+        Me.open10.Size = New System.Drawing.Size(116, 39)
+        Me.open10.TabIndex = 2
+        Me.open10.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open10, "Open The Cards File")
+        Me.open10.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton10
+        '
+        Me.OpenFileButton10.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton10.Name = "OpenFileButton10"
+        Me.OpenFileButton10.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton10.TabIndex = 0
+        Me.OpenFileButton10.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton10, "Add File to Card")
+        Me.OpenFileButton10.UseVisualStyleBackColor = True
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox9.TabIndex = 1
+        Me.CheckBox9.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox9, "Mark The Card as Complete")
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
+        'open9
+        '
+        Me.open9.Location = New System.Drawing.Point(128, 25)
+        Me.open9.Name = "open9"
+        Me.open9.Size = New System.Drawing.Size(116, 39)
+        Me.open9.TabIndex = 2
+        Me.open9.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open9, "Open The Cards File")
+        Me.open9.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton9
+        '
+        Me.OpenFileButton9.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton9.Name = "OpenFileButton9"
+        Me.OpenFileButton9.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton9.TabIndex = 0
+        Me.OpenFileButton9.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton9, "Add File to Card")
+        Me.OpenFileButton9.UseVisualStyleBackColor = True
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox10.TabIndex = 1
+        Me.CheckBox10.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox10, "Mark The Card as Complete")
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
+        'open12
+        '
+        Me.open12.Location = New System.Drawing.Point(128, 25)
+        Me.open12.Name = "open12"
+        Me.open12.Size = New System.Drawing.Size(116, 39)
+        Me.open12.TabIndex = 2
+        Me.open12.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open12, "Open The Cards File")
+        Me.open12.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton12
+        '
+        Me.OpenFileButton12.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton12.Name = "OpenFileButton12"
+        Me.OpenFileButton12.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton12.TabIndex = 0
+        Me.OpenFileButton12.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton12, "Add File to Card")
+        Me.OpenFileButton12.UseVisualStyleBackColor = True
+        '
+        'CheckBox11
+        '
+        Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox11.Name = "CheckBox11"
+        Me.CheckBox11.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox11.TabIndex = 1
+        Me.CheckBox11.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox11, "Mark The Card as Complete")
+        Me.CheckBox11.UseVisualStyleBackColor = True
+        '
+        'open11
+        '
+        Me.open11.Location = New System.Drawing.Point(128, 25)
+        Me.open11.Name = "open11"
+        Me.open11.Size = New System.Drawing.Size(116, 39)
+        Me.open11.TabIndex = 2
+        Me.open11.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open11, "Open The Cards File")
+        Me.open11.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton11
+        '
+        Me.OpenFileButton11.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton11.Name = "OpenFileButton11"
+        Me.OpenFileButton11.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton11.TabIndex = 0
+        Me.OpenFileButton11.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton11, "Add File to Card")
+        Me.OpenFileButton11.UseVisualStyleBackColor = True
+        '
+        'CheckBox12
+        '
+        Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox12.Name = "CheckBox12"
+        Me.CheckBox12.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox12.TabIndex = 1
+        Me.CheckBox12.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox12, "Mark The Card as Complete")
+        Me.CheckBox12.UseVisualStyleBackColor = True
+        '
+        'open14
+        '
+        Me.open14.Location = New System.Drawing.Point(128, 25)
+        Me.open14.Name = "open14"
+        Me.open14.Size = New System.Drawing.Size(116, 39)
+        Me.open14.TabIndex = 2
+        Me.open14.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open14, "Open The Cards File")
+        Me.open14.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton14
+        '
+        Me.OpenFileButton14.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton14.Name = "OpenFileButton14"
+        Me.OpenFileButton14.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton14.TabIndex = 0
+        Me.OpenFileButton14.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton14, "Add File to Card")
+        Me.OpenFileButton14.UseVisualStyleBackColor = True
+        '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox13.TabIndex = 1
+        Me.CheckBox13.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox13, "Mark The Card as Complete")
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'open13
+        '
+        Me.open13.Location = New System.Drawing.Point(128, 25)
+        Me.open13.Name = "open13"
+        Me.open13.Size = New System.Drawing.Size(116, 39)
+        Me.open13.TabIndex = 2
+        Me.open13.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open13, "Open The Cards File")
+        Me.open13.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton13
+        '
+        Me.OpenFileButton13.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton13.Name = "OpenFileButton13"
+        Me.OpenFileButton13.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton13.TabIndex = 0
+        Me.OpenFileButton13.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton13, "Add File to Card")
+        Me.OpenFileButton13.UseVisualStyleBackColor = True
+        '
+        'CheckBox14
+        '
+        Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox14.TabIndex = 1
+        Me.CheckBox14.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox14, "Mark The Card as Complete")
+        Me.CheckBox14.UseVisualStyleBackColor = True
+        '
+        'open16
+        '
+        Me.open16.Location = New System.Drawing.Point(128, 25)
+        Me.open16.Name = "open16"
+        Me.open16.Size = New System.Drawing.Size(116, 39)
+        Me.open16.TabIndex = 2
+        Me.open16.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open16, "Open The Cards File")
+        Me.open16.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton16
+        '
+        Me.OpenFileButton16.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton16.Name = "OpenFileButton16"
+        Me.OpenFileButton16.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton16.TabIndex = 0
+        Me.OpenFileButton16.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton16, "Add File to Card")
+        Me.OpenFileButton16.UseVisualStyleBackColor = True
+        '
+        'CheckBox15
+        '
+        Me.CheckBox15.AutoSize = True
+        Me.CheckBox15.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox15.TabIndex = 1
+        Me.CheckBox15.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox15, "Mark The Card as Complete")
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'open15
+        '
+        Me.open15.Location = New System.Drawing.Point(128, 25)
+        Me.open15.Name = "open15"
+        Me.open15.Size = New System.Drawing.Size(116, 39)
+        Me.open15.TabIndex = 2
+        Me.open15.Text = "Open File"
+        Me.ToolTip1.SetToolTip(Me.open15, "Open The Cards File")
+        Me.open15.UseVisualStyleBackColor = True
+        '
+        'OpenFileButton15
+        '
+        Me.OpenFileButton15.Location = New System.Drawing.Point(6, 25)
+        Me.OpenFileButton15.Name = "OpenFileButton15"
+        Me.OpenFileButton15.Size = New System.Drawing.Size(116, 39)
+        Me.OpenFileButton15.TabIndex = 0
+        Me.OpenFileButton15.Text = "Add File"
+        Me.ToolTip1.SetToolTip(Me.OpenFileButton15, "Add File to Card")
+        Me.OpenFileButton15.UseVisualStyleBackColor = True
+        '
+        'CheckBox16
+        '
+        Me.CheckBox16.AutoSize = True
+        Me.CheckBox16.Location = New System.Drawing.Point(264, 33)
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.Size = New System.Drawing.Size(128, 28)
+        Me.CheckBox16.TabIndex = 1
+        Me.CheckBox16.Text = "Completed"
+        Me.ToolTip1.SetToolTip(Me.CheckBox16, "Mark The Card as Complete")
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.White
+        Me.GroupBox2.Controls.Add(Me.open10)
+        Me.GroupBox2.Controls.Add(Me.FileLocationText10)
+        Me.GroupBox2.Controls.Add(Me.OpenFileButton10)
+        Me.GroupBox2.Controls.Add(Me.CheckBox9)
+        Me.GroupBox2.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(458, 575)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox2.TabIndex = 10
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Sell Lift"
+        '
+        'FileLocationText10
+        '
+        Me.FileLocationText10.AutoSize = True
+        Me.FileLocationText10.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText10.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText10.Name = "FileLocationText10"
+        Me.FileLocationText10.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText10.TabIndex = 3
+        Me.FileLocationText10.Text = "No File Selected"
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.BackColor = System.Drawing.Color.White
+        Me.GroupBox8.Controls.Add(Me.open9)
+        Me.GroupBox8.Controls.Add(Me.FileLocationText9)
+        Me.GroupBox8.Controls.Add(Me.OpenFileButton9)
+        Me.GroupBox8.Controls.Add(Me.CheckBox10)
+        Me.GroupBox8.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox8.Location = New System.Drawing.Point(22, 575)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox8.TabIndex = 9
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "Sell Lift"
+        '
+        'FileLocationText9
+        '
+        Me.FileLocationText9.AutoSize = True
+        Me.FileLocationText9.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText9.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText9.Name = "FileLocationText9"
+        Me.FileLocationText9.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText9.TabIndex = 3
+        Me.FileLocationText9.Text = "No File Selected"
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.BackColor = System.Drawing.Color.White
+        Me.GroupBox9.Controls.Add(Me.open12)
+        Me.GroupBox9.Controls.Add(Me.FileLocationText12)
+        Me.GroupBox9.Controls.Add(Me.OpenFileButton12)
+        Me.GroupBox9.Controls.Add(Me.CheckBox11)
+        Me.GroupBox9.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox9.Location = New System.Drawing.Point(458, 692)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox9.TabIndex = 10
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "Sell Lift"
+        '
+        'FileLocationText12
+        '
+        Me.FileLocationText12.AutoSize = True
+        Me.FileLocationText12.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText12.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText12.Name = "FileLocationText12"
+        Me.FileLocationText12.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText12.TabIndex = 3
+        Me.FileLocationText12.Text = "No File Selected"
+        '
+        'GroupBox10
+        '
+        Me.GroupBox10.BackColor = System.Drawing.Color.White
+        Me.GroupBox10.Controls.Add(Me.open11)
+        Me.GroupBox10.Controls.Add(Me.FileLocationText11)
+        Me.GroupBox10.Controls.Add(Me.OpenFileButton11)
+        Me.GroupBox10.Controls.Add(Me.CheckBox12)
+        Me.GroupBox10.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox10.Location = New System.Drawing.Point(22, 692)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox10.TabIndex = 9
+        Me.GroupBox10.TabStop = False
+        Me.GroupBox10.Text = "Sell Lift"
+        '
+        'FileLocationText11
+        '
+        Me.FileLocationText11.AutoSize = True
+        Me.FileLocationText11.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText11.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText11.Name = "FileLocationText11"
+        Me.FileLocationText11.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText11.TabIndex = 3
+        Me.FileLocationText11.Text = "No File Selected"
+        '
+        'GroupBox11
+        '
+        Me.GroupBox11.BackColor = System.Drawing.Color.White
+        Me.GroupBox11.Controls.Add(Me.open14)
+        Me.GroupBox11.Controls.Add(Me.FileLocationText14)
+        Me.GroupBox11.Controls.Add(Me.OpenFileButton14)
+        Me.GroupBox11.Controls.Add(Me.CheckBox13)
+        Me.GroupBox11.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox11.Location = New System.Drawing.Point(458, 809)
+        Me.GroupBox11.Name = "GroupBox11"
+        Me.GroupBox11.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox11.TabIndex = 10
+        Me.GroupBox11.TabStop = False
+        Me.GroupBox11.Text = "Sell Lift"
+        '
+        'FileLocationText14
+        '
+        Me.FileLocationText14.AutoSize = True
+        Me.FileLocationText14.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText14.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText14.Name = "FileLocationText14"
+        Me.FileLocationText14.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText14.TabIndex = 3
+        Me.FileLocationText14.Text = "No File Selected"
+        '
+        'GroupBox12
+        '
+        Me.GroupBox12.BackColor = System.Drawing.Color.White
+        Me.GroupBox12.Controls.Add(Me.open13)
+        Me.GroupBox12.Controls.Add(Me.FileLocationText13)
+        Me.GroupBox12.Controls.Add(Me.OpenFileButton13)
+        Me.GroupBox12.Controls.Add(Me.CheckBox14)
+        Me.GroupBox12.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox12.Location = New System.Drawing.Point(22, 809)
+        Me.GroupBox12.Name = "GroupBox12"
+        Me.GroupBox12.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox12.TabIndex = 9
+        Me.GroupBox12.TabStop = False
+        Me.GroupBox12.Text = "Sell Lift"
+        '
+        'FileLocationText13
+        '
+        Me.FileLocationText13.AutoSize = True
+        Me.FileLocationText13.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText13.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText13.Name = "FileLocationText13"
+        Me.FileLocationText13.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText13.TabIndex = 3
+        Me.FileLocationText13.Text = "No File Selected"
+        '
+        'GroupBox13
+        '
+        Me.GroupBox13.BackColor = System.Drawing.Color.White
+        Me.GroupBox13.Controls.Add(Me.open16)
+        Me.GroupBox13.Controls.Add(Me.FileLocationText16)
+        Me.GroupBox13.Controls.Add(Me.OpenFileButton16)
+        Me.GroupBox13.Controls.Add(Me.CheckBox15)
+        Me.GroupBox13.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox13.Location = New System.Drawing.Point(458, 926)
+        Me.GroupBox13.Name = "GroupBox13"
+        Me.GroupBox13.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox13.TabIndex = 10
+        Me.GroupBox13.TabStop = False
+        Me.GroupBox13.Text = "Sell Lift"
+        '
+        'FileLocationText16
+        '
+        Me.FileLocationText16.AutoSize = True
+        Me.FileLocationText16.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText16.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText16.Name = "FileLocationText16"
+        Me.FileLocationText16.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText16.TabIndex = 3
+        Me.FileLocationText16.Text = "No File Selected"
+        '
+        'GroupBox14
+        '
+        Me.GroupBox14.BackColor = System.Drawing.Color.White
+        Me.GroupBox14.Controls.Add(Me.open15)
+        Me.GroupBox14.Controls.Add(Me.FileLocationText15)
+        Me.GroupBox14.Controls.Add(Me.OpenFileButton15)
+        Me.GroupBox14.Controls.Add(Me.CheckBox16)
+        Me.GroupBox14.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox14.Location = New System.Drawing.Point(22, 926)
+        Me.GroupBox14.Name = "GroupBox14"
+        Me.GroupBox14.Size = New System.Drawing.Size(415, 111)
+        Me.GroupBox14.TabIndex = 9
+        Me.GroupBox14.TabStop = False
+        Me.GroupBox14.Text = "Sell Lift"
+        '
+        'FileLocationText15
+        '
+        Me.FileLocationText15.AutoSize = True
+        Me.FileLocationText15.Font = New System.Drawing.Font("Calibri Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FileLocationText15.Location = New System.Drawing.Point(6, 77)
+        Me.FileLocationText15.Name = "FileLocationText15"
+        Me.FileLocationText15.Size = New System.Drawing.Size(113, 19)
+        Me.FileLocationText15.TabIndex = 3
+        Me.FileLocationText15.Text = "No File Selected"
         '
         'JobForm
         '
@@ -561,6 +1057,14 @@ Partial Class JobForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(918, 1180)
+        Me.Controls.Add(Me.GroupBox13)
+        Me.Controls.Add(Me.GroupBox14)
+        Me.Controls.Add(Me.GroupBox11)
+        Me.Controls.Add(Me.GroupBox12)
+        Me.Controls.Add(Me.GroupBox9)
+        Me.Controls.Add(Me.GroupBox10)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox8)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
@@ -591,6 +1095,22 @@ Partial Class JobForm
         Me.GroupBox6.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
+        Me.GroupBox9.ResumeLayout(False)
+        Me.GroupBox9.PerformLayout()
+        Me.GroupBox10.ResumeLayout(False)
+        Me.GroupBox10.PerformLayout()
+        Me.GroupBox11.ResumeLayout(False)
+        Me.GroupBox11.PerformLayout()
+        Me.GroupBox12.ResumeLayout(False)
+        Me.GroupBox12.PerformLayout()
+        Me.GroupBox13.ResumeLayout(False)
+        Me.GroupBox13.PerformLayout()
+        Me.GroupBox14.ResumeLayout(False)
+        Me.GroupBox14.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -640,4 +1160,44 @@ Partial Class JobForm
     Friend WithEvents OpenFileButton8 As Button
     Friend WithEvents CheckBox8 As CheckBox
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents open10 As Button
+    Friend WithEvents FileLocationText10 As Label
+    Friend WithEvents OpenFileButton10 As Button
+    Friend WithEvents CheckBox9 As CheckBox
+    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents open9 As Button
+    Friend WithEvents OpenFileButton9 As Button
+    Friend WithEvents CheckBox10 As CheckBox
+    Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents open12 As Button
+    Friend WithEvents FileLocationText12 As Label
+    Friend WithEvents OpenFileButton12 As Button
+    Friend WithEvents CheckBox11 As CheckBox
+    Friend WithEvents GroupBox10 As GroupBox
+    Friend WithEvents open11 As Button
+    Friend WithEvents FileLocationText11 As Label
+    Friend WithEvents OpenFileButton11 As Button
+    Friend WithEvents CheckBox12 As CheckBox
+    Friend WithEvents GroupBox11 As GroupBox
+    Friend WithEvents open14 As Button
+    Friend WithEvents FileLocationText14 As Label
+    Friend WithEvents OpenFileButton14 As Button
+    Friend WithEvents CheckBox13 As CheckBox
+    Friend WithEvents GroupBox12 As GroupBox
+    Friend WithEvents open13 As Button
+    Friend WithEvents FileLocationText13 As Label
+    Friend WithEvents OpenFileButton13 As Button
+    Friend WithEvents CheckBox14 As CheckBox
+    Friend WithEvents GroupBox13 As GroupBox
+    Friend WithEvents open16 As Button
+    Friend WithEvents FileLocationText16 As Label
+    Friend WithEvents OpenFileButton16 As Button
+    Friend WithEvents CheckBox15 As CheckBox
+    Friend WithEvents GroupBox14 As GroupBox
+    Friend WithEvents open15 As Button
+    Friend WithEvents FileLocationText15 As Label
+    Friend WithEvents OpenFileButton15 As Button
+    Friend WithEvents CheckBox16 As CheckBox
+    Friend WithEvents FileLocationText9 As Label
 End Class
