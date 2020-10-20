@@ -56,24 +56,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("X:\Tracker Program\")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("\\SERVER\shared folders\Company\Tracker Program\")>  _
         Public Property FolderLocation() As String
             Get
                 Return CType(Me("FolderLocation"),String)
             End Get
             Set
                 Me("FolderLocation") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property JobLoadArray() As Global.system.collections.arraylist
-            Get
-                Return CType(Me("JobLoadArray"),Global.system.collections.arraylist)
-            End Get
-            Set
-                Me("JobLoadArray") = value
             End Set
         End Property
     End Class

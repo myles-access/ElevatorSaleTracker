@@ -3,10 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="FolderLocation" Type="System.String" Scope="User">
-      <Value Profile="(Default)">X:\Tracker Program\</Value>
-    </Setting>
-    <Setting Name="JobLoadArray" Type="system.collections.arraylist" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">\\SERVER\shared folders\Company\Tracker Program\</Value>
     </Setting>
   </Settings>
 </SettingsFile>

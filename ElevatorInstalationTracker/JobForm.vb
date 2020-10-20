@@ -7,7 +7,11 @@ Public Class JobForm
         SaveForm()
     End Sub
     Private Sub JobForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'RefreshForm()
+        Me.MdiParent = MainMenu
+        'Me.Size = JobForm.Size
+        Me.WindowState = FormWindowState.Maximized
+        Me.Top = 0
+        Me.Left = 0
     End Sub
 
     Public Sub JobForm_FormClosing(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.FormClosing
@@ -43,6 +47,7 @@ Public Class JobForm
     End Sub
 
     Private Sub SaveForm()
+        ' need to fix by checking if the filewriter is null and closing if not. but check isnt working so needs revisiting
         'FileWriter.Close()
 
         FileWriter = New StreamWriter(My.Settings.FolderLocation & AddressText.Text & "\#tracker.txt", False)
@@ -99,6 +104,9 @@ Public Class JobForm
 
         FileWriter.Flush()
         FileWriter.Close()
+
+        'REFRESH-SAVE-LOOP
+        'this refresh form method call is part of an infinite loop, do not have it enabled if the SaveForm() call is also enabled within the RefreshForm() method
         'RefreshForm()
     End Sub
 
@@ -200,7 +208,8 @@ Public Class JobForm
             open16.Enabled = True
         End If
 
-
+        'REFRESH-SAVE-LOOP 
+        'this save form method call is part of an infinite loop, do not have it enabled if the RefreshForm() call is also enabled within the SaveForm() method
         SaveForm()
     End Sub
 

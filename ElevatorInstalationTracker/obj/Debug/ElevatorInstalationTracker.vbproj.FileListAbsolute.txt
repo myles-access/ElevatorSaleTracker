@@ -13,3 +13,18 @@ C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\
 C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.xml
 C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.pdb
 C:\Users\myles\Desktop\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.LoadAddress.resources
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.exe.config
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.exe
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.pdb
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\bin\Debug\ElevatorInstalationTracker.xml
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.vbprojAssemblyReference.cache
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.AddressInput.resources
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.LoadAddress.resources
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.MainMenu.resources
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.JobForm.resources
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.Resources.resources
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.vbproj.GenerateResource.cache
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.vbproj.CoreCompileInputs.cache
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.exe
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.xml
+C:\Git Repos\ElevatorSaleTracker\ElevatorInstalationTracker\obj\Debug\ElevatorInstalationTracker.pdb

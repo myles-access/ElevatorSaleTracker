@@ -4,6 +4,10 @@ Public Class MainMenu
     Dim FileWriter As StreamWriter
     Dim FileReader As StreamReader
 
+    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
     Private Sub NewJobButton_Click(sender As Object, e As EventArgs) Handles NewJobButton.Click
         LoadAddress.Close()
         AddressInput.Show()
@@ -15,13 +19,8 @@ Public Class MainMenu
     End Sub
 
     Public Sub SetupJobForm()
-        JobForm.MdiParent = Me
-        'Me.Size = JobForm.Size
-        JobForm.WindowState = FormWindowState.Maximized
         NewJobButton.Visible = False
         LoadFileButton.Visible = False
-        JobForm.Top = 0
-        JobForm.Left = 0
         JobForm.RefreshForm()
     End Sub
 
@@ -172,9 +171,5 @@ Public Class MainMenu
 
         FileReader.Close()
         SetupJobForm()
-    End Sub
-
-    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

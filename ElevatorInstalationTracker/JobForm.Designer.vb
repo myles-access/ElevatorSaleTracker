@@ -185,6 +185,7 @@ Partial Class JobForm
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.OpenFileDialog1.InitialDirectory = "\\SERVER\shared folders\Company\Tracker Program\"
         '
         'AddressText
         '

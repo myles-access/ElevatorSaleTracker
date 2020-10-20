@@ -45,9 +45,9 @@ Partial Class LoadAddress
         'ComboLoadButton
         '
         Me.ComboLoadButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboLoadButton.Location = New System.Drawing.Point(633, 73)
+        Me.ComboLoadButton.Location = New System.Drawing.Point(633, 57)
         Me.ComboLoadButton.Name = "ComboLoadButton"
-        Me.ComboLoadButton.Size = New System.Drawing.Size(211, 70)
+        Me.ComboLoadButton.Size = New System.Drawing.Size(211, 75)
         Me.ComboLoadButton.TabIndex = 1
         Me.ComboLoadButton.Text = "Load Job"
         Me.ToolTip1.SetToolTip(Me.ComboLoadButton, "Load Job From Selection")
@@ -67,12 +67,13 @@ Partial Class LoadAddress
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.OpenFileDialog1.InitialDirectory = "\\SERVER\shared folders\Company\Tracker Program\"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(633, 166)
+        Me.Button1.Location = New System.Drawing.Point(633, 157)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(211, 31)
+        Me.Button1.Size = New System.Drawing.Size(211, 40)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Sort Jobs"
         Me.ToolTip1.SetToolTip(Me.Button1, "Re-Sort List of Jobs")

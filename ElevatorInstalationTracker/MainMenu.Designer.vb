@@ -67,7 +67,6 @@ Partial Class MainMenu
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.Name = "MainMenu"
-        Me.Text = "Main Menu"
         CType(Me.LoadFileButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NewJobButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
