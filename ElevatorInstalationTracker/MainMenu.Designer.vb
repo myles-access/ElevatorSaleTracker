@@ -35,10 +35,10 @@ Partial Class MainMenu
         '
         Me.LoadFileButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LoadFileButton.Image = Global.ElevatorInstalationTracker.My.Resources.Resources.folder
-        Me.LoadFileButton.Location = New System.Drawing.Point(344, 837)
+        Me.LoadFileButton.Location = New System.Drawing.Point(536, 883)
         Me.LoadFileButton.Name = "LoadFileButton"
         Me.LoadFileButton.Size = New System.Drawing.Size(200, 200)
-        Me.LoadFileButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.LoadFileButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.LoadFileButton.TabIndex = 1
         Me.LoadFileButton.TabStop = False
         Me.ToolTip1.SetToolTip(Me.LoadFileButton, "Load Existing Job")
@@ -47,10 +47,10 @@ Partial Class MainMenu
         '
         Me.NewJobButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.NewJobButton.Image = Global.ElevatorInstalationTracker.My.Resources.Resources.Add
-        Me.NewJobButton.Location = New System.Drawing.Point(344, 584)
+        Me.NewJobButton.Location = New System.Drawing.Point(110, 883)
         Me.NewJobButton.Name = "NewJobButton"
         Me.NewJobButton.Size = New System.Drawing.Size(200, 200)
-        Me.NewJobButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.NewJobButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.NewJobButton.TabIndex = 0
         Me.NewJobButton.TabStop = False
         Me.ToolTip1.SetToolTip(Me.NewJobButton, "Create a New Job")

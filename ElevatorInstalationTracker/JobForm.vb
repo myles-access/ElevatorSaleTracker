@@ -47,7 +47,7 @@ Public Class JobForm
     End Sub
 
     Private Sub SaveForm()
-        ' need to fix by checking if the filewriter is null and closing if not. but check isnt working so needs revisiting
+        'Need to fix by checking if the filewriter is null and closing if not. but check isnt working so needs revisiting
         'FileWriter.Close()
 
         FileWriter = New StreamWriter(My.Settings.FolderLocation & AddressText.Text & "\#tracker.txt", False)

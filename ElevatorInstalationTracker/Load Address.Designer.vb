@@ -38,14 +38,14 @@ Partial Class LoadAddress
         Me.LoadCombo.FormattingEnabled = True
         Me.LoadCombo.Location = New System.Drawing.Point(12, 73)
         Me.LoadCombo.Name = "LoadCombo"
-        Me.LoadCombo.Size = New System.Drawing.Size(606, 45)
+        Me.LoadCombo.Size = New System.Drawing.Size(636, 45)
         Me.LoadCombo.TabIndex = 0
         Me.ToolTip1.SetToolTip(Me.LoadCombo, "List of Existing Jobs")
         '
         'ComboLoadButton
         '
         Me.ComboLoadButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboLoadButton.Location = New System.Drawing.Point(633, 57)
+        Me.ComboLoadButton.Location = New System.Drawing.Point(654, 57)
         Me.ComboLoadButton.Name = "ComboLoadButton"
         Me.ComboLoadButton.Size = New System.Drawing.Size(211, 75)
         Me.ComboLoadButton.TabIndex = 1
@@ -71,7 +71,7 @@ Partial Class LoadAddress
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(633, 157)
+        Me.Button1.Location = New System.Drawing.Point(654, 157)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(211, 40)
         Me.Button1.TabIndex = 2

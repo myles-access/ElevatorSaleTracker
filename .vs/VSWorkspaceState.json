@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\ElevatorInstalationTracker",
+    "\\ElevatorInstalationTracker\\bin",
+    "\\ElevatorInstalationTracker\\bin\\Debug",
     "\\ElevatorInstalationTracker\\My Project",
-    "\\ElevatorInstalationTracker\\obj"
+    "\\ElevatorInstalationTracker\\obj",
+    "\\ElevatorInstalationTracker\\obj\\Debug",
+    "\\ElevatorInstalationTracker\\obj\\Release"
   ],
   "SelectedNode": "\\ElevatorInstalationTracker\\ElevatorInstalationTracker.sln",
   "PreviewInSolutionExplorer": false

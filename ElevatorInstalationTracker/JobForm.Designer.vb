@@ -194,7 +194,7 @@ Partial Class JobForm
         Me.AddressText.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AddressText.Font = New System.Drawing.Font("Calibri", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddressText.ForeColor = System.Drawing.Color.White
-        Me.AddressText.Location = New System.Drawing.Point(35, 46)
+        Me.AddressText.Location = New System.Drawing.Point(23, 55)
         Me.AddressText.Name = "AddressText"
         Me.AddressText.Size = New System.Drawing.Size(128, 49)
         Me.AddressText.TabIndex = 0
@@ -204,6 +204,7 @@ Partial Class JobForm
         '
         'SaveButton
         '
+        Me.SaveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SaveButton.Location = New System.Drawing.Point(383, 1076)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Size = New System.Drawing.Size(137, 43)
@@ -1057,7 +1058,7 @@ Partial Class JobForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(918, 1180)
+        Me.ClientSize = New System.Drawing.Size(903, 1180)
         Me.Controls.Add(Me.GroupBox13)
         Me.Controls.Add(Me.GroupBox14)
         Me.Controls.Add(Me.GroupBox11)

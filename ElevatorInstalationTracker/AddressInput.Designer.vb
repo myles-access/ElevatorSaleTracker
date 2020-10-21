@@ -41,7 +41,7 @@ Partial Class AddressInput
         'SubmitAddress
         '
         Me.SubmitAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SubmitAddress.Location = New System.Drawing.Point(289, 123)
+        Me.SubmitAddress.Location = New System.Drawing.Point(290, 153)
         Me.SubmitAddress.Name = "SubmitAddress"
         Me.SubmitAddress.Size = New System.Drawing.Size(270, 127)
         Me.SubmitAddress.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class AddressInput
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(887, 453)
+        Me.ClientSize = New System.Drawing.Size(864, 453)
         Me.Controls.Add(Me.SubmitAddress)
         Me.Controls.Add(Me.AddressInputText)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
